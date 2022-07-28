@@ -1,14 +1,12 @@
-# bootstrap-boilerplate
-## Daily Challenge for Mobile Friendly Websites Day 3
-This repository is home to my bootstrap boilerplate. This provides a template for future projects.
+# My Portfolio
+## View
+View the website here.
 
-This project is useful to save time so I don't have to remake this boilerplate for every project. 
+## About
+This is my portfolio documenting what I have worked on so far and my skills.
 
-### Getting started
-Fork this repo to make it your own and edit the boilerplate as you please. 
-
-### Contributors
+## Contributors
 I am the sole contributor.
 
 ### Questions?
-All questions should be directed to Google.com
+All questions should be directed to nathan.anderson.1024@gmail.com
