@@ -11,15 +11,38 @@ nav {
     color: #3BA55D;
     background-color: #36393F;
 }
+/* Changes background color and text color when hovering, circles change to rounded squares */
 .icons:hover {
     background-color: #278d47;
     color: white;
     border-radius: 25% !important;
     transition: ease-in-out 200ms;
 }
+/* Shows helper text when hovering over icons */
 .tooltip-nav {
     display: none;
 }
 .icons:hover .tooltip-nav {
     display: block;
+}
+/* Main section */
+.main-section {
+    background-color: #36393F;
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.flex-container-right {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Search bar */
+.search-bar {
+    background-color: #202225;
 }
