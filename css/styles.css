@@ -40,7 +40,23 @@ nav {
     border: 1px solid green;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+.flex-child {
+    margin-right: 2rem;
+    border: 1px solid magenta;
+}
+.flex-child:hover {
+    color: #DCDDDE;
+}
+.flex-child:hover .right-tooltip-nav {
+    display: block;
+}
+/* Tooltip for the right side */
+.right-tooltip-nav {
+    border: 1px solid yellow;
+    margin-right: 2rem;
+    display: none;
 }
 /* Search bar */
 .search-bar {
