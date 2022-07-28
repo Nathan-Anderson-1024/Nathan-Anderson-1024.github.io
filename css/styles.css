@@ -17,3 +17,9 @@ nav {
     border-radius: 25% !important;
     transition: ease-in-out 200ms;
 }
+.tooltip-nav {
+    display: none;
+}
+.icons:hover .tooltip-nav {
+    display: block;
+}
