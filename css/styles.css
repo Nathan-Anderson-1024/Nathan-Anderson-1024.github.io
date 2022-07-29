@@ -25,6 +25,10 @@ nav {
 .icons:hover .tooltip-nav {
     display: block;
 }
+.top-nav {
+    width: 97vw;
+    background-color: #36393F;
+}
 /* Main section */
 .main-section {
     background-color: #36393F;
@@ -98,7 +102,7 @@ nav {
     animation-name: slide-left;
 }
 /* make content slide in from bottom */
-@keyframes sliding-vertically {
+/* @keyframes sliding-vertically {
     from {
         margin-top: 100%;
     }
@@ -116,4 +120,10 @@ nav {
         margin-left: 0%;
         width: 4rem;
     }
+} */
+/* My skills section */
+
+/* Hover rows change background color */
+.hover-rows:hover {
+    background-color: #32353B;
 }
