@@ -28,6 +28,7 @@ nav {
 .top-nav {
     width: 97vw;
     background-color: #36393F;
+    z-index: 1;
 }
 /* Main section */
 .main-section {
@@ -135,4 +136,15 @@ nav {
 .hover-rows:hover {
     background-color: #32353B;
 }
+/* Carousel section */
+.carousel-container {
+    z-index: 0;
+}
 /* Contact Section */
+.card {
+    width: 18rem;
+    height: 18rem;
+}
+.contact-icon {
+    color: #0A58CA;
+}
