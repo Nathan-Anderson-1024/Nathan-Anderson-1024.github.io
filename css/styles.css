@@ -28,6 +28,8 @@ nav {
 /* Main section */
 .main-section {
     background-color: #36393F;
+    margin-left: 4rem;
+
 }
 .flex-container {
     display: flex;
@@ -61,4 +63,8 @@ nav {
 /* Search bar */
 .search-bar {
     background-color: #202225;
+}
+/* Hello section */
+.hello-section {
+    border: 1px solid green;
 }
