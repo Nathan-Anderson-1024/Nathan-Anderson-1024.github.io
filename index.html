@@ -286,20 +286,25 @@
       </div>
       <div class="row g-0 hover-rows">
         <div class="col-12 d-flex justify-content-center align-items-center">
-          <form action="" class="col-10">
+          <form action="" class="col-6">
             <div class="mb-3">
               <label for="#name" class="form-label text-light">Your Name</label>
-              <input type="text" class="form-control" id="name">
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
             </div>
             <div class="mb-3">
               <label for="#email-address" class="form-label">Your Email Address</label>
-              <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Your Email Address">
               <div id="emailHelp" class="form-text">I will never share your email with anyone.</div>
             </div>
             <div class="mb-3">
               <label for="#subject-line" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject-line">
+              <input type="text" class="form-control" id="subject-line" placeholder="What is the subject of your inquiry?">
             </div>
+            <div class="mb-3">
+              <label for="#message" class="form-label">Message</label>
+              <textarea type="text" class="form-control" id="message" placeholder="Please leave a message after the beep.." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
