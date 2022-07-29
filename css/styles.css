@@ -136,3 +136,7 @@ nav {
     background-color: #32353B;
 }
 /* Contact Section */
+.card {
+    width: 18rem;
+    height: 18rem;
+}
