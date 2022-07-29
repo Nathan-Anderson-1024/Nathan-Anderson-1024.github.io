@@ -163,9 +163,9 @@ nav {
     bottom: 0;
     width: 97vw;
     background-color: #36393F;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .footer-div {
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     width: 95%;
 }
