@@ -183,7 +183,7 @@
         </div>
       </div>
       <div class="row g-0 mb-5 project-row-6 hover-rows">
-        <div class="col-6 d-flex justify-content-center p-0">
+        <div class="col-6 d-flex justify-content-center p-0 carousel-container">
           <!-- <img src="./img/carousel_preview.JPG" alt="a preview of my carousel page" class="preview-image me-3"> -->
           <div id="contact-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -286,25 +286,21 @@
       </div>
       <div class="row g-0 hover-rows">
         <div class="col-12 d-flex justify-content-center align-items-center">
-          <div class="card">
-            <div class="card-body w-100 d-flex justify-content-center align-items-center flex-column">
-              <i class="fa-solid fa-envelope text-secondary fa-4x mb-4"></i>
-              <h4 class="card-title text-dark text-center">Email</h4>
-              <p class="card-text text-secondary">Nathan.Anderson.1024@gmail.com</p>
+          <form action="" class="col-10">
+            <div class="mb-3">
+              <label for="#name" class="form-label text-light">Your Name</label>
+              <input type="text" class="form-control" id="name">
             </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-dark text-center">LinkedIn</h4>
-              <p class="card-text"></p>
+            <div class="mb-3">
+              <label for="#email-address" class="form-label">Your Email Address</label>
+              <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">I will never share your email with anyone.</div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-dark text-center">Discord</h4>
-              <p class="card-text"></p>
+            <div class="mb-3">
+              <label for="#subject-line" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject-line">
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </main>
