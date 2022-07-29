@@ -148,3 +148,7 @@ nav {
 .contact-icon {
     color: #0A58CA;
 }
+/* Message bar */
+#message-bar {
+    background-color: #40444B;
+}
