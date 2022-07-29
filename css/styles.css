@@ -8,12 +8,12 @@ nav {
 .icons {
     height: 3rem;
     width: 3rem;
-    color: #3BA55D;
+    color: #0D6EFD;
     background-color: #36393F;
 }
 /* Changes background color and text color when hovering, circles change to rounded squares */
 .icons:hover {
-    background-color: #278d47;
+    background-color: #0A58CA;
     color: white;
     border-radius: 25% !important;
     transition: ease-in-out 200ms;
@@ -56,7 +56,6 @@ nav {
 }
 /* Tooltip for the right side */
 .right-tooltip-nav {
-    border: 1px solid yellow;
     margin-right: 2rem;
     display: none;
 }
