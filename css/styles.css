@@ -122,7 +122,15 @@ nav {
     }
 } */
 /* My skills section */
-
+/* Icons */
+.iconify-container {
+    height: 20vh;
+}
+.iconify:hover {
+    width: 150px;
+    height: 150px;
+    transition: ease-in-out 200ms;
+}
 /* Hover rows change background color */
 .hover-rows:hover {
     background-color: #32353B;
