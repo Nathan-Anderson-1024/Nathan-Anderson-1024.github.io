@@ -66,4 +66,21 @@ nav {
 /* Hello section */
 .hello-section {
     border: 1px solid green;
+    height: 50vh;
+}
+/* My projects section */
+.preview-image {
+    max-width: 33vw;
+}
+.project-row {
+    border: 1px solid blue;
+}
+.full-column {
+    border: 1px solid yellow;
+}
+.first-col {
+    border: 1px solid red;
+}
+.second-col {
+    border: 1px solid blue;
 }
