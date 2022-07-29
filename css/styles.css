@@ -98,7 +98,7 @@ nav {
     animation-name: slide-left;
 }
 /* make content slide in from bottom */
-@keyframes sliding-vertically {
+/* @keyframes sliding-vertically {
     from {
         margin-top: 100%;
     }
@@ -116,4 +116,6 @@ nav {
         margin-left: 0%;
         width: 4rem;
     }
-}
+} */
+/* My skills section */
+/* Icons */
