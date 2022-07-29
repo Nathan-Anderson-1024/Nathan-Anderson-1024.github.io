@@ -122,4 +122,8 @@ nav {
     }
 } */
 /* My skills section */
-/* Icons */
+
+/* Hover rows change background color */
+.hover-rows:hover {
+    background-color: #32353B;
+}
