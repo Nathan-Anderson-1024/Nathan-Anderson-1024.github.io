@@ -25,6 +25,10 @@ nav {
 .icons:hover .tooltip-nav {
     display: block;
 }
+.top-nav {
+    width: 97vw;
+    background-color: #36393F;
+}
 /* Main section */
 .main-section {
     background-color: #36393F;
