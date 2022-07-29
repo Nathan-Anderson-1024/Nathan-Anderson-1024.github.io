@@ -84,3 +84,36 @@ nav {
 .second-col {
     border: 1px solid blue;
 }
+/* animate slide in projects section */
+#my-projects {
+    animation-duration: 4s;
+    animation-name: sliding-vertically;
+}
+.project-row-1 {
+    animation-duration: 4s;
+    animation-name: sliding-vertically;
+}
+nav {
+    animation-duration: 3s;
+    animation-name: slide-left;
+}
+/* make content slide in from bottom */
+@keyframes sliding-vertically {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 4rem;
+    }
+}
