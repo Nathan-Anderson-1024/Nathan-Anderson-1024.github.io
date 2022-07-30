@@ -176,12 +176,32 @@ nav {
 .inline {
     margin: auto;
 }
-.input-icons a {
+.input-icons .icon-footer {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 3%;
 }
 .input-icons {
     width: 100%;
     margin-bottom: 10px;
+}
+.input-icons .icon-footer-gift {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+}
+.input-icons .icon-footer-film {
+    position: absolute;
+    top: 50%;
+    left: 94%;
+}
+.input-icons .icon-footer-page {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+}
+.input-icons .icon-footer-smile {
+    position: absolute;
+    top: 50%;
+    left: 96%;
 }
