@@ -11,6 +11,9 @@ nav {
     color: #0D6EFD;
     background-color: #36393F;
 }
+body {
+    margin-bottom: 4rem;
+}
 /* Changes background color and text color when hovering, circles change to rounded squares */
 .icons:hover {
     background-color: #0A58CA;
@@ -40,18 +43,18 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .flex-container-right {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .flex-child {
     margin-right: 2rem;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
 }
 .flex-child:hover {
     color: #DCDDDE;
@@ -70,14 +73,14 @@ nav {
 }
 /* Hello section */
 .hello-section {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 50vh;
 }
 /* My projects section */
 .preview-image {
     max-width: 33vw;
 }
-.project-row {
+/* .project-row {
     border: 1px solid blue;
 }
 .full-column {
@@ -88,7 +91,7 @@ nav {
 }
 .second-col {
     border: 1px solid blue;
-}
+} */
 /* animate slide in projects section */
 #my-projects {
     animation-duration: 4s;
@@ -147,4 +150,58 @@ nav {
 }
 .contact-icon {
     color: #0A58CA;
+}
+/* Message bar */
+#message-bar {
+    background-color: #40444B;
+    caret-color: white;
+}
+
+/* Footer container */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 97vw;
+    background-color: #36393F;
+    /* border: 1px solid green; */
+}
+.footer-div {
+    /* border: 1px solid magenta; */
+    width: 95%;
+}
+.icon-footer {
+    color: #DCDDDE;
+}
+/* Get symbols into message bar */
+.inline {
+    margin: auto;
+}
+.input-icons .icon-footer {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.input-icons .icon-footer-gift {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+}
+.input-icons .icon-footer-film {
+    position: absolute;
+    top: 50%;
+    left: 94%;
+}
+.input-icons .icon-footer-page {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+}
+.input-icons .icon-footer-smile {
+    position: absolute;
+    top: 50%;
+    left: 96%;
 }
