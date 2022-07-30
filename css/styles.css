@@ -169,6 +169,16 @@ nav {
     /* border: 1px solid magenta; */
     width: 95%;
 }
-.plus-icon {
+.icon-footer {
     color: #DCDDDE;
+}
+.inline {
+    margin: auto;
+}
+.input-icons i {
+    position: absolute;
+}
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
 }
