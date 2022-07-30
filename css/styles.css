@@ -172,11 +172,14 @@ nav {
 .icon-footer {
     color: #DCDDDE;
 }
+/* Get symbols into message bar */
 .inline {
     margin: auto;
 }
-.input-icons i {
+.input-icons a {
     position: absolute;
+    top: 25%;
+    left: 3%;
 }
 .input-icons {
     width: 100%;
