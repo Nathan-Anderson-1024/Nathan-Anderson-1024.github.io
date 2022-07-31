@@ -194,7 +194,7 @@ nav {
     
 }
 /* Media query for 1440p */
-@media only screen and (min-width: 1081px) and (max-width: 1499px) {
+@media only screen and (min-width: 1081px) and (max-width: 3800px) {
     html {
         font-size: 16px;
     }
@@ -332,6 +332,9 @@ nav {
         height: 150px;
         transition: ease-in-out 200ms;
     }
+    .iconify-large, .iconify-text-large {
+        display: none;
+    }
     /* Hover rows change background color */
     .hover-rows:hover {
         background-color: #32353B;
@@ -369,6 +372,13 @@ nav {
     .icon-footer {
         color: #DCDDDE;
     }
+    /* Footer icons */
+    .footer-icons {
+        font-size: 1.5rem;
+    }
+    .icon-plus {
+        font-size: 1.5rem;
+    }
     /* Get symbols into message bar */
     .inline {
         margin: auto;
@@ -379,8 +389,8 @@ nav {
     }
     /* Icon footer flexbox */
     .icon-footer-container {
-        left: 92%;
         top: 15%;
+        left: 92%;
     }
 }
 /* Media query for 4k+ */
