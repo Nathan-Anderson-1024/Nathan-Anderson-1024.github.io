@@ -196,13 +196,17 @@ nav {
         width: 100vw !important;
         margin-left: -4rem;
     }
+    /* Moves hello section down */
+    .hello-section {
+        padding-top: 4rem;
+    }
     /* Remove unessary icons from top nav */
     .remove-icon {
         display: none;
     }
     /* Make top nav fit the screen */
     .top-nav {
-        width: 100vw;
+        width: 97vw;
         background-color: #36393F;
         z-index: 1;
     }
