@@ -206,7 +206,7 @@ nav {
     }
     /* Make top nav fit the screen */
     .top-nav {
-        width: 97vw;
+        width: 100vw;
         background-color: #36393F;
         z-index: 1;
     }
