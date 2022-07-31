@@ -185,5 +185,16 @@ nav {
     left: 92%;
     top: 15%;
 }
+/* Media query for small screens */
 
+/* Media query for medium screens */
+
+/* Media query for 1080p */
+
+/* Media query for 1440p */
+
+/* Media query for 4k+ */
+@media only screen and (min-width:2560px) {
+    
+}
 
