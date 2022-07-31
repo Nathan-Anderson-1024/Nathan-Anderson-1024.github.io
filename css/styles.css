@@ -242,11 +242,7 @@ nav {
         width: 100%;
         margin-bottom: 10px;
     }
-    /* Icon footer flexbox */
-    .icon-footer-container {
-        left: 92%;
-        top: 15%;
-    }
+    
     /* Skills icons */
     .iconify-normal {
         height: 50px;
@@ -269,6 +265,14 @@ nav {
     .footer-div {
         /* border: 1px solid magenta; */
         width: 95%;
+    }
+    /* Icon footer flexbox */
+    .icon-footer-container {
+        left: 84%;
+        top: 15%;
+    }
+    .film-icon, .doc-icon {
+        display: none;
     }
     
 }
