@@ -185,16 +185,392 @@ nav {
     left: 92%;
     top: 15%;
 }
+.iconify-normal {
+    height: 100px;
+    width: 100px;
+}
 /* Media query for small screens */
-
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    /* Adjust Body spacing */
+    body {
+        width: 100vw !important;
+        margin-left: -4rem;
+    }
+    /* Moves hello section down */
+    .hello-section {
+        padding-top: 4rem;
+    }
+    /* Remove unessary icons from top nav */
+    .remove-icon {
+        display: none;
+    }
+    /* Make top nav fit the screen */
+    .top-nav {
+        width: 100vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
+    /* hide side nav */
+    .side-nav > * {
+        display: none !important;
+    }
+    .side-nav {
+        display: none !important;
+    }
+    /* Make main section fit the screen */
+    .main-section {
+        background-color: #36393F;
+        /* margin-left: 4rem; */
+        width: 100vw;
+    }
+    .flex-child {
+        margin-right: 0;
+        /* border: 1px solid magenta; */
+    }
+    .right-tooltip-nav {
+        margin-right: 0;
+        display: none;
+    }
+    .icon-footer {
+        color: #DCDDDE;
+    }
+    /* Get symbols into message bar */
+    .inline {
+        margin: auto;
+    }
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Skills icons */
+    .iconify-normal {
+        height: 50px;
+        width: 50px;
+    }
+    .iconify-text-normal {
+        font-size: 1rem;
+    }
+    #contact-me {
+        margin-top: 10rem;
+    }
+    /* Make footer fit screen */
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background-color: #36393F;
+        border: 1px solid green;
+    }
+    .footer-div {
+        /* border: 1px solid magenta; */
+        width: 95%;
+    }
+    /* Icon footer flexbox */
+    .icon-footer-container {
+        left: 84%;
+        top: 15%;
+    }
+    .film-icon, .doc-icon {
+        display: none;
+    }
+    /* preview image sizing */
+    .preview-image {
+        max-width: 95vw;
+    }
+    
+}
 /* Media query for medium screens */
 
 /* Media query for 1080p */
-
-/* Media query for 1440p */
-
-/* Media query for 4k+ */
-@media only screen and (min-width:2560px) {
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
     
 }
+/* Media query for 1440p */
+@media only screen and (min-width: 1081px) and (max-width: 3800px) {
+    html {
+        font-size: 16px;
+    }
+    nav {
+        background-color: #202225;
+        width: 4rem;
+    }
+    .icons {
+        height: 3rem;
+        width: 3rem;
+        color: #0D6EFD;
+        background-color: #36393F;
+    }
+    body {
+        margin-bottom: 8rem;
+    }
+    /* Changes background color and text color when hovering, circles change to rounded squares */
+    .icons:hover {
+        background-color: #0A58CA;
+        color: white;
+        border-radius: 25% !important;
+        transition: ease-in-out 200ms;
+    }
+    /* Shows helper text when hovering over icons */
+    .tooltip-nav {
+        display: none;
+    }
+    .icons:hover .tooltip-nav {
+        display: block;
+    }
+    .top-nav {
+        width: 97vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
+    /* Main section */
+    .main-section {
+        background-color: #36393F;
+        margin-left: 4rem;
+    
+    }
+    .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+    .flex-container-right {
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .flex-child {
+        margin-right: 2rem;
+        /* border: 1px solid magenta; */
+    }
+    .flex-child:hover {
+        color: #DCDDDE;
+    }
+    .flex-child:hover .right-tooltip-nav {
+        display: block;
+    }
+    /* Tooltip for the right side */
+    .right-tooltip-nav {
+        margin-right: 2rem;
+        display: none;
+    }
+    /* Search bar */
+    .search-bar {
+        background-color: #202225;
+    }
+    /* Hello section */
+    .hello-section {
+        /* border: 1px solid green; */
+        height: 50vh;
+    }
+    /* My projects section */
+    .preview-image {
+        max-width: 33vw;
+    }
+    /* .project-row {
+        border: 1px solid blue;
+    }
+    .full-column {
+        border: 1px solid yellow;
+    }
+    .first-col {
+        border: 1px solid red;
+    }
+    .second-col {
+        border: 1px solid blue;
+    } */
+    /* animate slide in projects section */
+    #my-projects {
+        animation-duration: 4s;
+        animation-name: sliding-vertically;
+    }
+    .project-row-1 {
+        animation-duration: 4s;
+        animation-name: sliding-vertically;
+    }
+    nav {
+        animation-duration: 3s;
+        animation-name: slide-left;
+    }
+    /* make content slide in from bottom */
+    /* @keyframes sliding-vertically {
+        from {
+            margin-top: 100%;
+        }
+        to {
+            margin-top: 0%;
+        }
+    }
+    
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 4rem;
+        }
+    } */
+    /* My skills section */
+    /* Icons */
+    .iconify-container {
+        height: 20vh;
+    }
+    .iconify:hover {
+        width: 150px;
+        height: 150px;
+        transition: ease-in-out 200ms;
+    }
+    .iconify-large, .iconify-text-large {
+        display: none;
+    }
+    /* Hover rows change background color */
+    .hover-rows:hover {
+        background-color: #32353B;
+    }
+    /* Carousel section */
+    .carousel-container {
+        z-index: 0;
+    }
+    /* Contact Section */
+    .card {
+        width: 18rem;
+        height: 18rem;
+    }
+    .contact-icon {
+        color: #0A58CA;
+    }
+    /* Message bar */
+    #message-bar {
+        background-color: #40444B;
+        caret-color: white;
+    }
+    
+    /* Footer container */
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 97vw;
+        background-color: #36393F;
+        /* border: 1px solid green; */
+    }
+    .footer-div {
+        /* border: 1px solid magenta; */
+        width: 95%;
+    }
+    .icon-footer {
+        color: #DCDDDE;
+    }
+    /* Footer icons */
+    .footer-icons {
+        font-size: 1.5rem;
+    }
+    .icon-plus {
+        font-size: 1.5rem;
+    }
+    /* Get symbols into message bar */
+    .inline {
+        margin: auto;
+    }
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Icon footer flexbox */
+    .icon-footer-container {
+        top: 15%;
+        left: 92%;
+    }
+}
+/* Media query for 4k+ */
+@media only screen and (min-width:3840px) {
+    nav {
+        background-color: #202225;
+        width: 10rem;
+    }
+    .icons {
+        height: 8rem;
+        width: 8rem;
+        color: #0D6EFD;
+        background-color: #36393F;
+    }
+    .icons i {
+        font-size: 4em;
+    }
+    body {
+        margin-bottom: 9rem;
+    }
+    .top-nav {
+        width: 95vw;
+        background-color: #36393F;
+        z-index: 1;
+        margin-left: 6rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .top-nav h5 {
+        font-size: 3rem;
+    }
+    /* Intro section */
+    .hello-section h1 {
+        font-size: 7rem;
+    }
+    .hello-section h3 {
+        font-size: 3.5rem;
+    }
+    /* My projects header */
+    #my-projects h3 {
+        font-size: 4rem;
+    }
+    #my-skills h3 {
+        font-size: 4rem;
+    }
+    #contact-me h3 {
+        font-size: 4rem;
+    }
+    /* Button format */
+    .projects-button, .github-button {
+        font-size: 3rem;
+    }
+    /* Description section */
+    .description-section {
+        font-size: 2rem;
+    }
+    /* Skills icons */
+    .iconify-normal {
+        height: 200px;
+        width: 200px;
+    }
+    .iconify-text-normal {
+        font-size: 2rem;
+    }
+    
+    /* Form styling */
+    .form-label, .form-control, .submit-form {
+        font-size: 2rem;
+    }
+    /* Message bar styling */
+    .footer-container {
+        margin-left: 6rem;
+    }
+    /* Right side icons */
+    .icon-footer-container {
+        top: 0%;
+        left: 94%;
+    }
+    .footer-icons {
+        font-size: 3rem;
+        
+    }
+    /* PLus icon */
+    .icon-plus {
+        font-size: 2.25rem;
+    }
+    /* Footer message bar */
+
+} 
 
