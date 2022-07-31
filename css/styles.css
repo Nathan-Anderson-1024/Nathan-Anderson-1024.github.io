@@ -179,11 +179,9 @@ nav {
 .input-icons {
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid red;
 }
 /* Icon footer flexbox */
 .icon-footer-container {
-    border: 1px solid blue;
     left: 92%;
     top: 15%;
 }
