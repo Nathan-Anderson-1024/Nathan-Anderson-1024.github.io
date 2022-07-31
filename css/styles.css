@@ -187,32 +187,7 @@ nav {
 }
 /* Media query for small screens */
 @media only screen and (min-width: 100px) and (max-width: 768px) {
-    #searchBar {
-        display: none;
-    }
-    .search-bar-div {
-        display: none;
-    }
-    /* Top nav icons right side */
-    .top-nav-icons {
-        font-size: 1rem;
-        border: 1px solid green;
-    }
-    .flex-child {
-        border: 1px solid red;
-    }
-    .flex-container-right {
-        border: 1px solid yellow;
-    }
     
-    .test {
-        border: 1px solid blue;
-    }
-    
-    /* About me nathans portfolio */
-    #about-me {
-        font-size: 1rem;
-    }
 }
 /* Media query for medium screens */
 
