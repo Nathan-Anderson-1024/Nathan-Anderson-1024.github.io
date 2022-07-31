@@ -233,6 +233,16 @@ nav {
     .hello-section h3 {
         font-size: 3.5rem;
     }
+    /* My projects header */
+    #my-projects h3 {
+        font-size: 4rem;
+    }
+    #my-skills h3 {
+        font-size: 4rem;
+    }
+    #contact-me h3 {
+        font-size: 4rem;
+    }
     /* Button format */
     .projects-button, .github-button {
         font-size: 3rem;
