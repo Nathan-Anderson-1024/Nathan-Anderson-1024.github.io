@@ -258,5 +258,9 @@ nav {
     .iconify-text-large {
         font-size: 2rem;
     }
+    /* Form styling */
+    .form-label, .form-control, .submit-form {
+        font-size: 2rem;
+    }
 } 
 
