@@ -12,7 +12,7 @@ nav {
     background-color: #36393F;
 }
 body {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 /* Changes background color and text color when hovering, circles change to rounded squares */
 .icons:hover {
@@ -176,32 +176,14 @@ nav {
 .inline {
     margin: auto;
 }
-.input-icons .icon-footer {
-    position: absolute;
-    top: 50%;
-    left: 3%;
-}
 .input-icons {
     width: 100%;
     margin-bottom: 10px;
 }
-.input-icons .icon-footer-gift {
-    position: absolute;
-    top: 50%;
-    left: 93%;
+/* Icon footer flexbox */
+.icon-footer-container {
+    left: 92%;
+    top: 15%;
 }
-.input-icons .icon-footer-film {
-    position: absolute;
-    top: 50%;
-    left: 94%;
-}
-.input-icons .icon-footer-page {
-    position: absolute;
-    top: 50%;
-    left: 95%;
-}
-.input-icons .icon-footer-smile {
-    position: absolute;
-    top: 50%;
-    left: 96%;
-}
+
+
