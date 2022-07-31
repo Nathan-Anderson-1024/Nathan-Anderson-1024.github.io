@@ -190,11 +190,52 @@ nav {
 /* Media query for medium screens */
 
 /* Media query for 1080p */
-
-/* Media query for 1440p */
-
-/* Media query for 4k+ */
-@media only screen and (min-width:2560px) {
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
     
 }
+/* Media query for 1440p */
+@media only screen and (min-width: 1081px) and (max-width: 1499px) {
+    
+}
+/* Media query for 4k+ */
+@media only screen and (min-width:1500px) {
+    nav {
+        background-color: #202225;
+        width: 10rem;
+    }
+    .icons {
+        height: 8rem;
+        width: 8rem;
+        color: #0D6EFD;
+        background-color: #36393F;
+    }
+    .icons i {
+        font-size: 4em;
+    }
+    body {
+        margin-bottom: 4rem;
+    }
+    .top-nav {
+        width: 95vw;
+        background-color: #36393F;
+        z-index: 1;
+        margin-left: 6rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .top-nav h5 {
+        font-size: 3rem;
+    }
+    /* Intro section */
+    .hello-section h1 {
+        font-size: 7rem;
+    }
+    .hello-section h3 {
+        font-size: 3.5rem;
+    }
+    /* Button format */
+    .projects-button, .github-button {
+        font-size: 3rem;
+    }
+} 
 
