@@ -251,5 +251,12 @@ nav {
     .description-section {
         font-size: 2rem;
     }
+    /* Skills icons */
+    .iconify-normal, .iconify-text-normal {
+        display: none;
+    }
+    .iconify-text-large {
+        font-size: 2rem;
+    }
 } 
 
