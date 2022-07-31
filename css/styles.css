@@ -195,10 +195,196 @@ nav {
 }
 /* Media query for 1440p */
 @media only screen and (min-width: 1081px) and (max-width: 1499px) {
+    html {
+        font-size: 16px;
+    }
+    nav {
+        background-color: #202225;
+        width: 4rem;
+    }
+    .icons {
+        height: 3rem;
+        width: 3rem;
+        color: #0D6EFD;
+        background-color: #36393F;
+    }
+    body {
+        margin-bottom: 4rem;
+    }
+    /* Changes background color and text color when hovering, circles change to rounded squares */
+    .icons:hover {
+        background-color: #0A58CA;
+        color: white;
+        border-radius: 25% !important;
+        transition: ease-in-out 200ms;
+    }
+    /* Shows helper text when hovering over icons */
+    .tooltip-nav {
+        display: none;
+    }
+    .icons:hover .tooltip-nav {
+        display: block;
+    }
+    .top-nav {
+        width: 97vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
+    /* Main section */
+    .main-section {
+        background-color: #36393F;
+        margin-left: 4rem;
     
+    }
+    .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+    .flex-container-right {
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .flex-child {
+        margin-right: 2rem;
+        /* border: 1px solid magenta; */
+    }
+    .flex-child:hover {
+        color: #DCDDDE;
+    }
+    .flex-child:hover .right-tooltip-nav {
+        display: block;
+    }
+    /* Tooltip for the right side */
+    .right-tooltip-nav {
+        margin-right: 2rem;
+        display: none;
+    }
+    /* Search bar */
+    .search-bar {
+        background-color: #202225;
+    }
+    /* Hello section */
+    .hello-section {
+        /* border: 1px solid green; */
+        height: 50vh;
+    }
+    /* My projects section */
+    .preview-image {
+        max-width: 33vw;
+    }
+    /* .project-row {
+        border: 1px solid blue;
+    }
+    .full-column {
+        border: 1px solid yellow;
+    }
+    .first-col {
+        border: 1px solid red;
+    }
+    .second-col {
+        border: 1px solid blue;
+    } */
+    /* animate slide in projects section */
+    #my-projects {
+        animation-duration: 4s;
+        animation-name: sliding-vertically;
+    }
+    .project-row-1 {
+        animation-duration: 4s;
+        animation-name: sliding-vertically;
+    }
+    nav {
+        animation-duration: 3s;
+        animation-name: slide-left;
+    }
+    /* make content slide in from bottom */
+    /* @keyframes sliding-vertically {
+        from {
+            margin-top: 100%;
+        }
+        to {
+            margin-top: 0%;
+        }
+    }
+    
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 4rem;
+        }
+    } */
+    /* My skills section */
+    /* Icons */
+    .iconify-container {
+        height: 20vh;
+    }
+    .iconify:hover {
+        width: 150px;
+        height: 150px;
+        transition: ease-in-out 200ms;
+    }
+    /* Hover rows change background color */
+    .hover-rows:hover {
+        background-color: #32353B;
+    }
+    /* Carousel section */
+    .carousel-container {
+        z-index: 0;
+    }
+    /* Contact Section */
+    .card {
+        width: 18rem;
+        height: 18rem;
+    }
+    .contact-icon {
+        color: #0A58CA;
+    }
+    /* Message bar */
+    #message-bar {
+        background-color: #40444B;
+        caret-color: white;
+    }
+    
+    /* Footer container */
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 97vw;
+        background-color: #36393F;
+        /* border: 1px solid green; */
+    }
+    .footer-div {
+        /* border: 1px solid magenta; */
+        width: 95%;
+    }
+    .icon-footer {
+        color: #DCDDDE;
+    }
+    /* Get symbols into message bar */
+    .inline {
+        margin: auto;
+    }
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Icon footer flexbox */
+    .icon-footer-container {
+        left: 92%;
+        top: 15%;
+    }
 }
 /* Media query for 4k+ */
-@media only screen and (min-width:1500px) {
+@media only screen and (min-width:3840px) {
     nav {
         background-color: #202225;
         width: 10rem;
