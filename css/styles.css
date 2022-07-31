@@ -274,6 +274,10 @@ nav {
     .film-icon, .doc-icon {
         display: none;
     }
+    /* preview image sizing */
+    .preview-image {
+        max-width: 95vw;
+    }
     
 }
 /* Media query for medium screens */
