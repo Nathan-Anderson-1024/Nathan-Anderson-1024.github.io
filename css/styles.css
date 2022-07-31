@@ -185,8 +185,68 @@ nav {
     left: 92%;
     top: 15%;
 }
+.iconify-normal {
+    height: 100px;
+    width: 100px;
+}
 /* Media query for small screens */
 @media only screen and (min-width: 100px) and (max-width: 768px) {
+    /* Remove unessary icons from top nav */
+    .remove-icon {
+        display: none;
+    }
+    /* Make top nav fit the screen */
+    .top-nav {
+        width: 97vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
+    /* hide side nav */
+    .side-nav > * {
+        display: none !important;
+    }
+    /* Make main section fit the screen */
+    .main-section {
+        background-color: #36393F;
+        margin-left: 4rem;
+        width: 97vw;
+    }
+    /* Make footer fit screen */
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background-color: #36393F;
+        /* border: 1px solid green; */
+    }
+    .footer-div {
+        /* border: 1px solid magenta; */
+        width: 95%;
+    }
+    .icon-footer {
+        color: #DCDDDE;
+    }
+    /* Get symbols into message bar */
+    .inline {
+        margin: auto;
+    }
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Icon footer flexbox */
+    .icon-footer-container {
+        left: 92%;
+        top: 15%;
+    }
+    /* Skills icons */
+    .iconify-normal {
+        height: 50px;
+        width: 50px;
+    }
+    .iconify-text-normal {
+        font-size: 1rem;
+    }
     
 }
 /* Media query for medium screens */
@@ -450,12 +510,14 @@ nav {
         font-size: 2rem;
     }
     /* Skills icons */
-    .iconify-normal, .iconify-text-normal {
-        display: none;
+    .iconify-normal {
+        height: 200px;
+        width: 200px;
     }
-    .iconify-text-large {
+    .iconify-text-normal {
         font-size: 2rem;
     }
+    
     /* Form styling */
     .form-label, .form-control, .submit-form {
         font-size: 2rem;
