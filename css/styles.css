@@ -247,5 +247,9 @@ nav {
     .projects-button, .github-button {
         font-size: 3rem;
     }
+    /* Description section */
+    .description-section {
+        font-size: 2rem;
+    }
 } 
 
