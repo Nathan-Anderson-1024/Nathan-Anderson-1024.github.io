@@ -4,6 +4,7 @@ html {
 nav {
     background-color: #202225;
     width: 4rem;
+    font-family: 'Open Sans', Arial;
 }
 .icons {
     height: 3rem;
@@ -13,6 +14,7 @@ nav {
 }
 body {
     margin-bottom: 4rem;
+    font-family: 'Source Code Pro', Arial;
 }
 /* Changes background color and text color when hovering, circles change to rounded squares */
 .icons:hover {
