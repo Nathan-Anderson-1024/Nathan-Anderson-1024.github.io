@@ -19,9 +19,7 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 4. investigate why hamburger nav isnt linking properly within the page
 5. optional(setup js so visitors can add to the bottom of the file)
 6. make images link to actual website
-7. make sure hamburger nav is in front of carousel
-8. Fix sizing on landscape devices
-9. Fix font issue with heading on mobile
+7. Fix font issue with heading on mobile
 
 
    

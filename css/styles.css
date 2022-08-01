@@ -181,7 +181,7 @@ nav {
     }
     /* Moves hello section down */
     .hello-section {
-        padding-top: 4rem;
+        margin-top: 4rem;
     }
     /* Remove unessary icons from top nav */
     .remove-icon {
