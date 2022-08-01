@@ -12,10 +12,8 @@ I am the sole contributor.
 All questions should be directed to nathan.anderson.1024@gmail.com
 
 
-<!-- TODO -->
-1. Fix icon sizing on 1080p screens and below
-2. Fix all sizing on 4k and below
-3. Add real text to projects
-4. remove border from upper search bar
-5. make mobile site
-6. add name like comments similar to discord
+#### TODO
+1. Add real text to projects
+2. add name like comments similar to discord
+3. review sizing at ~1280 - 1400px x 800- 900px
+   
