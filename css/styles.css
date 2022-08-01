@@ -258,6 +258,10 @@ nav {
     .preview-image {
         max-width: 95vw;
     }
+   /* Hide top nav */
+    .top-nav {
+        display: none;
+    }
     
 }
 /* Media query for medium screens */
@@ -298,6 +302,10 @@ nav {
     .input-icons {
         width: 95%;
         margin-bottom: 10px;
+    }
+    /* hide mobile navbar */
+    .mobile-navbar {
+        display: none;
     }
 }
 /* Media query for 1440p */
@@ -487,6 +495,20 @@ nav {
         top: 15%;
         left: 92%;
     }
+    /* hide mobile navbar */
+    /* .mobile-navbar {
+        display: none;
+    } */
+    .mobile-navbar {
+        width: 100vw;
+        margin-left: 4rem;
+        background-color: #36393F;
+    }
+    .offcanvas-header, .offcanvas-body {
+        background-color: #36393F;
+        color: white;
+    }
+    
 }
 /* Media query for 4k+ */
 @media only screen and (min-width:3840px) {
@@ -572,7 +594,10 @@ nav {
     .icon-plus {
         font-size: 2.25rem;
     }
-    /* Footer message bar */
+    /* hide mobile navbar */
+    .mobile-navbar {
+        display: none;
+    }
 
 } 
 
