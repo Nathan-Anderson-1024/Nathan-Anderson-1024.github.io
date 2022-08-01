@@ -60,10 +60,15 @@
     </nav>
     <!-- Hamburger Menu for mobile -->
     <div class="container-fluid mobile-navbar navbar-dark">
-      <button class="navbar-toggler rounded-circle text-light p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <i class="fa-solid fa-hashtag ms-3 me-md-1 me-sm-1 text-white align-middle"><span class="text-white text-reset fw-normal fs-5">nathan's-portfolio</span></i>
+      <div class="d-flex justify-content-between align-items-center">
+        <button class="navbar-toggler rounded-circle text-light p-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <i class="fa-solid fa-hashtag ms-3 me-md-1 me-sm-1 text-white align-middle"><span class="text-white text-reset fw-normal fs-5">nathan's-portfolio</span></i>
+        <a href="#" class="text-reset"><i class="fa-solid fa-magnifying-glass ms-1 text-white"></i></a>
+        <a href="#" class="text-reset top-nav-a-tag"><i class="fa-solid fa-people-group fa-2xl top-nav-icons text-white"></i></a>
+      </div>
+      
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Road trip</h5>
@@ -109,18 +114,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="navbar mobile-navbar">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleMenu" aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle Sidebar Navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </div>
-    <div class="collapse mobile-collapse" id="navbarToggleMenu">
-      <div>
-        <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-      </div>
-    </div> -->
     <main class="main-section text-white text-start">
       <!-- Top most nav/ buttons -->
       <div class="row g-0 position-fixed top-nav">
