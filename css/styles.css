@@ -283,8 +283,34 @@ nav {
 /* Media query for medium screens */
 
 /* Media query for 1080p */
-@media only screen and (min-width: 720px) and (max-width: 1080px) {
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    /* Make top nav fit the screen */
+    .top-nav {
+        width: 95vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
     
+    nav {
+        background-color: #202225;
+        width: 4rem;
+    }
+    .main-section {
+        background-color: #36393F;
+        margin-left: 4rem;
+    
+    }
+    /* Contact section */
+    #contact-me {
+        margin-top: 6rem;
+    }
+    
+    
+    
+    /* Image scaling for project section */
+    .preview-image {
+        max-width: 90vw;
+    }
 }
 /* Media query for 1440p */
 @media only screen and (min-width: 1081px) and (max-width: 3800px) {
