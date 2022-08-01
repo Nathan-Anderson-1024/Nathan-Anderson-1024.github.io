@@ -649,6 +649,10 @@ nav {
     .mobile-navbar {
         display: none;
     }
-
+    /* Fix chat size */
+    #chat {
+        font-size: 4rem;
+        margin-left: 15rem !important;
+    }
 } 
 
