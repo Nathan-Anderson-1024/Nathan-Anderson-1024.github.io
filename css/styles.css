@@ -262,6 +262,15 @@ nav {
     .top-nav {
         display: none;
     }
+    .mobile-navbar {
+        width: 100vw;
+        margin-left: 4rem;
+        background-color: #36393F;
+    }
+    .offcanvas-header, .offcanvas-body {
+        background-color: #36393F;
+        color: white;
+    }
     
 }
 /* Media query for medium screens */
@@ -496,18 +505,10 @@ nav {
         left: 92%;
     }
     /* hide mobile navbar */
-    /* .mobile-navbar {
+     .mobile-navbar {
         display: none;
-    } */
-    .mobile-navbar {
-        width: 100vw;
-        margin-left: 4rem;
-        background-color: #36393F;
-    }
-    .offcanvas-header, .offcanvas-body {
-        background-color: #36393F;
-        color: white;
-    }
+    } 
+    
     
 }
 /* Media query for 4k+ */
