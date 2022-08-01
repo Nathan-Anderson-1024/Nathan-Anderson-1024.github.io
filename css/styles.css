@@ -363,6 +363,9 @@ nav {
         /* margin-left: 4rem; */
         width: 100vw;
     }
+    .footer-container {
+        width: 100vw;
+    }
 }
 /* Media query for 1440p */
 @media only screen and (min-width: 1081px) and (max-width: 3800px) {
