@@ -304,12 +304,20 @@ nav {
     #contact-me {
         margin-top: 6rem;
     }
-    
+    /* Footer icons right side */
+    .icon-footer-container {
+        top: 15%;
+        left: 80%;
+    }
     
     
     /* Image scaling for project section */
     .preview-image {
         max-width: 90vw;
+    }
+    .input-icons {
+        width: 95%;
+        margin-bottom: 10px;
     }
 }
 /* Media query for 1440p */
