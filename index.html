@@ -384,13 +384,17 @@
           </form>
         </div>
       </div>
+      
+      <ul class="text-white mt-5 mb-5 pb-5 list-unstyled ms-5" id="chat"></ul>
+      
       <div class="row g-0 py-3 py-xl-5 footer-container d-flex justify-content-center">
         <div class="footer-div">
-          <form class="inline">
+          <form class="inline" id="chat-form">
             <div class="input-icons position-relative">
               <div class="icon-footer d-flex justify-content-start align-items-center">
                 <a href="#" class="me-2 ms-2 text-reset position-absolute icon-plus"><i class="fa-solid fa-circle-plus fa-1xl"></i></a>
-                <input type="text" class="form-control input-field px-5 border-0 py-xxl-3 py-xl-2" id="message-bar" placeholder="Message #nathan's-portfolio">
+                <input type="text" class="form-control input-field px-5 border-0 py-xxl-3 py-xl-2 text-white" id="message-bar" name="chat-msg" placeholder="Message #nathan's-portfolio">
+                <input type="submit" style="display:none">
               </div>
               <div class="d-flex justify-content-end icon-footer-container position-absolute">
                 <a href="#" class="text-reset footer-icons me-3"><i class="fa-solid fa-gift fa-1xl gift-icon"></i></a>
@@ -415,5 +419,6 @@
    
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
