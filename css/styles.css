@@ -176,7 +176,6 @@ body {
         margin-right: 0;
     }
     .right-tooltip-nav {
-        margin-right: 0;
         display: none;
     }
     /* Skills icons */
@@ -243,11 +242,8 @@ body {
         margin-right: 0;
     }
     .right-tooltip-nav {
-        margin-right: 0;
         display: none;
     }
-    
-    
     /* Skills icons */
     .iconify-normal {
         height: 75px;
@@ -259,7 +255,6 @@ body {
     #contact-me {
         margin-top: 14rem;
     }
-    
     /* preview image sizing */
     .preview-image {
         max-width: 95vw;
@@ -287,7 +282,6 @@ body {
     }
     .gift-icon {
         right: 1.5rem;
-        
     }
 }
 
@@ -328,10 +322,6 @@ body {
     }
     #contact-me h3 {
         margin-top: 10rem;
-    }
-    /* Hide top nav */
-    .top-nav {
-        display: none;
     }
     .offcanvas-header, .offcanvas-body {
         background-color: #36393F;
@@ -377,41 +367,12 @@ body {
     .icons:hover .tooltip-nav {
         display: block;
     }
-    .flex-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-       
-    }
-    
-    .flex-container-right {
-        
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .flex-child {
-        margin-right: 2rem;
-        
-    }
-    .flex-child:hover {
-        color: #DCDDDE;
-    }
-    .flex-child:hover .right-tooltip-nav {
-        display: block;
-    }
     /* Tooltip for the right side */
     .right-tooltip-nav {
-        margin-right: 2rem;
         display: none;
-    }
-    /* Search bar */
-    .search-bar {
-        background-color: #202225;
     }
     /* Hello section */
     .hello-section {
-        
         height: 50vh;
     }
     /* My projects section */
@@ -419,25 +380,12 @@ body {
         max-width: 40vw;
     }
     /* My skills section */
-    /* Icons */
-    .iconify-container {
-        height: 20vh;
-    }
     .iconify-large, .iconify-text-large {
         display: none;
-    }
-    /* Carousel section */
-    .carousel-container {
-        z-index: 0;
     }
     /* Contact Section */
     .contact-icon {
         color: #0A58CA;
-    }
-    /* Message bar */
-    #message-bar {
-        background-color: #40444B;
-        caret-color: white;
     }
     /* hide mobile navbar */
      .mobile-navbar {
