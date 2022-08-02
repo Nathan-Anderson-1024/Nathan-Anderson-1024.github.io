@@ -26,13 +26,19 @@ body {
 /* Shows helper text when hovering over icons */
 .tooltip-nav {
     display: none;
-    z-index: 50000000 !important;
 }
 .icons:hover .tooltip-nav {
     display: block;
 }
 .top-nav {
     width: 97vw;
+    background-color: #36393F;
+    z-index: 1;
+}
+/* Mobile hamburger nav */
+.mobile-navbar {
+    width: 100vw;
+    margin-left: 4rem;
     background-color: #36393F;
     z-index: 1;
 }
@@ -79,40 +85,6 @@ body {
 .preview-image {
     max-width: 33vw;
 }
-
-/* animate slide in projects section */
-#my-projects {
-    animation-duration: 4s;
-    animation-name: sliding-vertically;
-}
-.project-row-1 {
-    animation-duration: 4s;
-    animation-name: sliding-vertically;
-}
-nav {
-    animation-duration: 3s;
-    animation-name: slide-left;
-}
-/* make content slide in from bottom */
-/* @keyframes sliding-vertically {
-    from {
-        margin-top: 100%;
-    }
-    to {
-        margin-top: 0%;
-    }
-}
-
-@keyframes slide-left {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 4rem;
-    }
-} */
 /* My skills section */
 /* Icons */
 .iconify-container {
@@ -132,10 +104,6 @@ nav {
     z-index: 0;
 }
 /* Contact Section */
-.card {
-    width: 18rem;
-    height: 18rem;
-}
 .contact-icon {
     color: #0A58CA;
 }
@@ -144,39 +112,108 @@ nav {
     background-color: #40444B;
     caret-color: white;
 }
-
-/* Footer container */
-.footer-container {
-    position: fixed;
-    bottom: 0;
-    width: 97vw;
-    background-color: #36393F;
-}
-.footer-div {
-    width: 95%;
-}
 .icon-footer {
     color: #DCDDDE;
-}
-/* Get symbols into message bar */
-.inline {
-    margin: auto;
-}
-.input-icons {
-    width: 100%;
-    margin-bottom: 10px;
-}
-/* Icon footer flexbox */
-.icon-footer-container {
-    left: 92%;
-    top: 15%;
 }
 .iconify-normal {
     height: 100px;
     width: 100px;
 }
+.row-div {
+    background-color: #36393F;
+}
+.icon-plus {
+    left: 0;
+}
+.smile-icon {
+    right: 0;
+}
+.doc-icon {
+    right: 2rem;
+}
+.film-icon {
+    right: 4rem;
+}
+.gift-icon {
+    right: 6rem;
+    
+}
+.message-bar-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.icon-footer a {
+    font-size: 1rem;
+}
+/* Media query for screens smaller than 370px */
+@media only screen and (min-width: 100px) and (max-width: 369px) {
+    /* Adjust Body spacing */
+    body {
+        width: 100vw !important;
+        margin-left: -4rem;
+    }
+    /* Moves hello section down */
+    .hello-section {
+        margin-top: 8rem;
+    }
+    /* Remove unessary icons from top nav */
+    .remove-icon {
+        display: none;
+    }
+    /* hide side nav */
+    .side-nav > * {
+        display: none !important;
+    }
+    .side-nav {
+        display: none !important;
+    }
+    /* Make main section fit the screen */
+    .main-section {
+        width: 100vw;
+    }
+    .flex-child {
+        margin-right: 0;
+    }
+    .right-tooltip-nav {
+        margin-right: 0;
+        display: none;
+    }
+    /* Skills icons */
+    .iconify-normal {
+        height: 75px;
+        width: 75px;
+    }
+    .iconify-text-normal {
+        font-size: 1rem;
+    }
+    .contact-container {
+        margin-top: 25rem;
+    }
+    /* preview image sizing */
+    .preview-image {
+        max-width: 95vw;
+    }
+   /* Hide top nav */
+    .top-nav {
+        display: none;
+    }
+    .offcanvas-header, .offcanvas-body {
+        background-color: #36393F;
+        color: white;
+    }
+    .message-bar-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .icon-footer input {
+        font-size: 0.60rem;
+    }
+    .film-icon, .doc-icon, .smile-icon, .gift-icon {
+        display: none;
+    }
+}
 /* Media query for small screens */
-@media only screen and (min-width: 100px) and (max-width: 768px) {
+@media only screen and (min-width: 370px) and (max-width: 768px) {
     /* Adjust Body spacing */
     body {
         width: 100vw !important;
@@ -190,12 +227,6 @@ nav {
     .remove-icon {
         display: none;
     }
-    /* Make top nav fit the screen */
-    .top-nav {
-        width: 100vw;
-        background-color: #36393F;
-        z-index: 1;
-    }
     /* hide side nav */
     .side-nav > * {
         display: none !important;
@@ -205,8 +236,6 @@ nav {
     }
     /* Make main section fit the screen */
     .main-section {
-        background-color: #36393F;
-        /* margin-left: 4rem; */
         width: 100vw;
     }
     .flex-child {
@@ -216,17 +245,7 @@ nav {
         margin-right: 0;
         display: none;
     }
-    .icon-footer {
-        color: #DCDDDE;
-    }
-    /* Get symbols into message bar */
-    .inline {
-        margin: auto;
-    }
-    .input-icons {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+    
     
     /* Skills icons */
     .iconify-normal {
@@ -239,24 +258,7 @@ nav {
     #contact-me {
         margin-top: 14rem;
     }
-    /* Make footer fit screen */
-    .footer-container {
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-        background-color: #36393F;
-    }
-    .footer-div {
-        width: 95%;
-    }
-    /* Icon footer flexbox */
-    .icon-footer-container {
-        left: 84%;
-        top: 15%;
-    }
-    .film-icon, .doc-icon {
-        display: none;
-    }
+    
     /* preview image sizing */
     .preview-image {
         max-width: 95vw;
@@ -265,57 +267,40 @@ nav {
     .top-nav {
         display: none;
     }
-    .mobile-navbar {
-        width: 100vw;
-        margin-left: 4rem;
-        background-color: #36393F;
-        z-index: 1;
-    }
     .offcanvas-header, .offcanvas-body {
         background-color: #36393F;
         color: white;
     }
-    
+    .message-bar-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .icon-footer input {
+        font-size: 0.75rem;
+    }
+    .film-icon, .doc-icon {
+        display: none;
+    }
+    .smile-icon {
+        right: 0;
+    }
+    .gift-icon {
+        right: 1.5rem;
+        
+    }
 }
 
 /* Media query for medium screens */
 
 /* Media query for 1080p */
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
-    /* Make top nav fit the screen */
-    .top-nav {
-        width: 95vw;
-        background-color: #36393F;
-        z-index: 1;
-    }
-    
-    nav {
-        background-color: #202225;
-        width: 4rem;
-    }
-    .main-section {
-        background-color: #36393F;
-        margin-left: 4rem;
-    
-    }
     /* Contact section */
     #contact-me {
         margin-top: 6rem;
     }
-    /* Footer icons right side */
-    .icon-footer-container {
-        top: 15%;
-        left: 80%;
-    }
-    
-    
     /* Image scaling for project section */
     .preview-image {
         max-width: 90vw;
-    }
-    .input-icons {
-        width: 95%;
-        margin-bottom: 10px;
     }
     /* hide mobile navbar */
     .mobile-navbar {
@@ -342,13 +327,6 @@ nav {
     .top-nav {
         display: none;
     }
-    .mobile-navbar {
-        width: 100vw;
-        margin-left: 4rem;
-        background-color: #36393F;
-        display: block;
-        z-index: 1;
-    }
     .offcanvas-header, .offcanvas-body {
         background-color: #36393F;
         color: white;
@@ -362,11 +340,6 @@ nav {
     }
     /* Make main section fit the screen */
     .main-section {
-        background-color: #36393F;
-        /* margin-left: 4rem; */
-        width: 100vw;
-    }
-    .footer-container {
         width: 100vw;
     }
 }
@@ -375,19 +348,15 @@ nav {
     html {
         font-size: 16px;
     }
-    nav {
-        background-color: #202225;
-        width: 4rem;
-    }
     .icons {
         height: 3rem;
         width: 3rem;
         color: #0D6EFD;
         background-color: #36393F;
     }
-    /* body {
+    body {
         margin-bottom: 8rem;
-    } */
+    }
     /* Changes background color and text color when hovering, circles change to rounded squares */
     .icons:hover {
         background-color: #0A58CA;
@@ -401,17 +370,6 @@ nav {
     }
     .icons:hover .tooltip-nav {
         display: block;
-    }
-    .top-nav {
-        width: 97vw;
-        background-color: #36393F;
-        z-index: 1;
-    }
-    /* Main section */
-    .main-section {
-        background-color: #36393F;
-        margin-left: 4rem;
-    
     }
     .flex-container {
         display: flex;
@@ -454,66 +412,19 @@ nav {
     .preview-image {
         max-width: 40vw;
     }
-    
-    /* animate slide in projects section */
-    #my-projects {
-        animation-duration: 4s;
-        animation-name: sliding-vertically;
-    }
-    .project-row-1 {
-        animation-duration: 4s;
-        animation-name: sliding-vertically;
-    }
-    nav {
-        animation-duration: 3s;
-        animation-name: slide-left;
-    }
-    /* make content slide in from bottom */
-    /* @keyframes sliding-vertically {
-        from {
-            margin-top: 100%;
-        }
-        to {
-            margin-top: 0%;
-        }
-    }
-    
-    @keyframes slide-left {
-        from {
-            margin-left: 100%;
-            width: 300%;
-        }
-        to {
-            margin-left: 0%;
-            width: 4rem;
-        }
-    } */
     /* My skills section */
     /* Icons */
     .iconify-container {
         height: 20vh;
     }
-    .iconify-icon-container:hover {
-        transform: scale(1.2);
-        transform-origin: center;
-        transition: ease-in-out 200ms;
-    }
     .iconify-large, .iconify-text-large {
         display: none;
-    }
-    /* Hover rows change background color */
-    .hover-rows:hover {
-        background-color: #32353B;
     }
     /* Carousel section */
     .carousel-container {
         z-index: 0;
     }
     /* Contact Section */
-    .card {
-        width: 18rem;
-        height: 18rem;
-    }
     .contact-icon {
         color: #0A58CA;
     }
@@ -522,90 +433,18 @@ nav {
         background-color: #40444B;
         caret-color: white;
     }
-    
-    /* Footer container */
-    /* .footer-container {
-        position: fixed;
-        bottom: 0;
-        width: 97vw;
-        background-color: #36393F;
-        
-    } */
-    /* .footer-div {
-        width: 95%;
-    } */
-    /* .icon-footer {
-        color: #DCDDDE;
-    } */
-    /* Footer icons */
-    /* .footer-icons {
-        font-size: 1.5rem;
-    } */
-    /* .icon-plus {
-        font-size: 1.5rem;
-    } */
-    /* Get symbols into message bar */
-    /* .inline {
-        margin: auto;
-    } */
-    /* .input-icons {
-        width: 100%;
-        margin-bottom: 10px;
-    } */
-    /* Icon footer flexbox */
-    /* .icon-footer-container {
-        top: 15%;
-        left: 91%;
-    } */
     /* hide mobile navbar */
      .mobile-navbar {
         display: none;
     }
-
-
-    /* TEST */
-    .icon-footer {
-        border: 1px solid red;
-    }
-    #message-bar {
-        border: 5px solid blue;
-    }
-    .row-div {
-        border: 1px solid green;
-    }
-    .inline {
-        border: 1px solid magenta;
-    }
+    /* Resize footer icons for this screen size */
     .icon-footer a {
         font-size: 1.25rem;
     }
-    .icon-plus {
-        left: 0;
-        top: 25%;
-    }
-    .smile-icon {
-        right: 0;
-        top: 25%;
-    }
-    .doc-icon {
-        right: 2rem;
-        top: 25%;
-    }
-    .film-icon {
-        right: 4rem;
-        top: 25%;
-    }
-    .gift-icon {
-        right: 6rem;
-        top: 25%;
-    }
-    
-    
 }
 /* Media query for 4k+ */
 @media only screen and (min-width:3840px) {
     nav {
-        background-color: #202225;
         width: 10rem;
     }
     .icons {
@@ -622,8 +461,6 @@ nav {
     }
     .top-nav {
         width: 95vw;
-        background-color: #36393F;
-        z-index: 1;
         margin-left: 6rem;
         padding-top: 2rem;
         font-size: 2rem;
@@ -669,18 +506,8 @@ nav {
     .form-label, .form-control, .submit-form {
         font-size: 2rem;
     }
-    /* Message bar styling */
-    .footer-container {
-        margin-left: 6rem;
-    }
-    /* Right side icons */
-    .icon-footer-container {
-        top: 0%;
-        left: 94%;
-    }
     .footer-icons {
         font-size: 3rem;
-        
     }
     /* PLus icon */
     .icon-plus {
