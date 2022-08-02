@@ -32,4 +32,5 @@ form.onsubmit = (event) => {
     addMessage(combined); //adds You + time li to dom after hitting enter
     addMessage(input.value); //adds your message to dom after hitting enter
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
+    input.value = '';
 }
