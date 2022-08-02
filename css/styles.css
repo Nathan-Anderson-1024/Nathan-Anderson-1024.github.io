@@ -26,6 +26,7 @@ body {
 /* Shows helper text when hovering over icons */
 .tooltip-nav {
     display: none;
+    z-index: 50000000 !important;
 }
 .icons:hover .tooltip-nav {
     display: block;
