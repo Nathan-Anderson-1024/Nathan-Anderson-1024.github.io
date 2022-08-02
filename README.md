@@ -27,6 +27,7 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 9. time stamp not updating
 10. fix about button
 11. make form wider for contact form
+12. Check carousel image sizes
 
 
 
