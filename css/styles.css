@@ -359,7 +359,6 @@ body {
         color: #0D6EFD;
         background-color: #36393F;
     }
-    
     /* Changes background color and text color when hovering, circles change to rounded squares */
     .icons:hover {
         background-color: #0A58CA;
