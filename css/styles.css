@@ -118,9 +118,9 @@ nav {
 .iconify-container {
     height: 20vh;
 }
-.iconify:hover {
-    width: 150px;
-    height: 150px;
+.iconify-icon-container:hover {
+    transform: scale(1.2);
+    transform-origin: center;
     transition: ease-in-out 200ms;
 }
 /* Hover rows change background color */
@@ -230,14 +230,14 @@ nav {
     
     /* Skills icons */
     .iconify-normal {
-        height: 50px;
-        width: 50px;
+        height: 75px;
+        width: 75px;
     }
     .iconify-text-normal {
         font-size: 1rem;
     }
     #contact-me {
-        margin-top: 10rem;
+        margin-top: 14rem;
     }
     /* Make footer fit screen */
     .footer-container {
@@ -493,9 +493,9 @@ nav {
     .iconify-container {
         height: 20vh;
     }
-    .iconify:hover {
-        width: 150px;
-        height: 150px;
+    .iconify-icon-container:hover {
+        transform: scale(1.2);
+        transform-origin: center;
         transition: ease-in-out 200ms;
     }
     .iconify-large, .iconify-text-large {

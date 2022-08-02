@@ -24,8 +24,8 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 6. fix bottom buttons scaling
 7. ~~Home button covered by nav~~ (removed it)
 8. ~~delete text from message bar after submitting~~
-9. time stamp not updating
-10. fix about button
+9. ~~time stamp not updating~~
+10. ~~fix about button~~
 11. ~~make form wider for contact form~~
 12. Check carousel image sizes
 
