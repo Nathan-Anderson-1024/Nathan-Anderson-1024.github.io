@@ -306,6 +306,11 @@ body {
     .mobile-navbar {
         display: none;
     }
+    .top-nav {
+        width: 95vw;
+        background-color: #36393F;
+        z-index: 1;
+    }
 }
 /* Media query for small phones in landscape */
 @media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 1079px) {
