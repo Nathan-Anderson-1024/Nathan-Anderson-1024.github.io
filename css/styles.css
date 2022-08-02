@@ -13,7 +13,7 @@ nav {
     background-color: #36393F;
 }
 body {
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     font-family: 'Source Code Pro', Arial;
 }
 /* Changes background color and text color when hovering, circles change to rounded squares */
@@ -385,9 +385,9 @@ nav {
         color: #0D6EFD;
         background-color: #36393F;
     }
-    body {
+    /* body {
         margin-bottom: 8rem;
-    }
+    } */
     /* Changes background color and text color when hovering, circles change to rounded squares */
     .icons:hover {
         background-color: #0A58CA;
@@ -524,43 +524,81 @@ nav {
     }
     
     /* Footer container */
-    .footer-container {
+    /* .footer-container {
         position: fixed;
         bottom: 0;
         width: 97vw;
         background-color: #36393F;
         
-    }
-    .footer-div {
+    } */
+    /* .footer-div {
         width: 95%;
-    }
-    .icon-footer {
+    } */
+    /* .icon-footer {
         color: #DCDDDE;
-    }
+    } */
     /* Footer icons */
-    .footer-icons {
+    /* .footer-icons {
         font-size: 1.5rem;
-    }
-    .icon-plus {
+    } */
+    /* .icon-plus {
         font-size: 1.5rem;
-    }
+    } */
     /* Get symbols into message bar */
-    .inline {
+    /* .inline {
         margin: auto;
-    }
-    .input-icons {
+    } */
+    /* .input-icons {
         width: 100%;
         margin-bottom: 10px;
-    }
+    } */
     /* Icon footer flexbox */
-    .icon-footer-container {
+    /* .icon-footer-container {
         top: 15%;
         left: 91%;
-    }
+    } */
     /* hide mobile navbar */
      .mobile-navbar {
         display: none;
-    } 
+    }
+
+
+    /* TEST */
+    .icon-footer {
+        border: 1px solid red;
+    }
+    #message-bar {
+        border: 5px solid blue;
+    }
+    .row-div {
+        border: 1px solid green;
+    }
+    .inline {
+        border: 1px solid magenta;
+    }
+    .icon-footer a {
+        font-size: 1.25rem;
+    }
+    .icon-plus {
+        left: 0;
+        top: 25%;
+    }
+    .smile-icon {
+        right: 0;
+        top: 25%;
+    }
+    .doc-icon {
+        right: 2rem;
+        top: 25%;
+    }
+    .film-icon {
+        right: 4rem;
+        top: 25%;
+    }
+    .gift-icon {
+        right: 6rem;
+        top: 25%;
+    }
     
     
 }
