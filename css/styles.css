@@ -155,7 +155,8 @@ body {
     }
     /* Moves hello section down */
     .hello-section {
-        margin-top: 8rem;
+        margin-top: 12rem;
+        margin-bottom: 6rem;
     }
     /* Remove unessary icons from top nav */
     .remove-icon {
@@ -197,6 +198,10 @@ body {
     .top-nav {
         display: none;
     }
+    /* Contact section */
+    #contact-me {
+        margin-top: 40rem;
+    }
     .offcanvas-header, .offcanvas-body {
         background-color: #36393F;
         color: white;
@@ -221,7 +226,7 @@ body {
     }
     /* Moves hello section down */
     .hello-section {
-        margin-top: 4rem;
+        margin-top: 10rem;
     }
     /* Remove unessary icons from top nav */
     .remove-icon {
@@ -289,6 +294,10 @@ body {
 
 /* Media query for 1080p */
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
+    
+    .hello-section {
+        margin-top: 6rem;
+    }
     /* Contact section */
     #contact-me {
         margin-top: 6rem;
@@ -315,7 +324,7 @@ body {
         margin-left: -4rem;
     }
     .hello-section {
-        margin-top: 8rem;
+        margin-top: 12rem;
     }
     .contact-text {
         margin-top: 2rem;
@@ -374,6 +383,7 @@ body {
     /* Hello section */
     .hello-section {
         height: 50vh;
+        margin-top: 12rem;
     }
     /* My projects section */
     .preview-image {

@@ -16,18 +16,18 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 
 
 #### TODO
-1. Add real text to projects
+~~1. Add real text to projects~~
 2. review sizing at ~1280 - 1400px x 800- 900px
-3. ~~investigate why hamburger nav isnt linking properly within the page (get it to close automatically)~~
-4. ~~make images link to actual website~~
+~~3. investigate why hamburger nav isnt linking properly within the page (get it to close automatically)~~
+~~4. make images link to actual website~~
 5. Fix font issue with heading on mobile (uses font awesome font on phone but not in firefox)
-6. ~~fix bottom buttons scaling~~
-7. ~~Home button covered by nav~~ (removed it)
-8. ~~delete text from message bar after submitting~~
-9. ~~time stamp not updating~~
-10. ~~fix about button~~
-11. ~~make form wider for contact form~~
-12. Check carousel image sizes
+~~6. fix bottom buttons scaling~~
+~~7. ~Home button covered by nav~~ (removed it)
+~~8. delete text from message bar after submitting~~
+~~9. time stamp not updating~~
+~~10.   fix about button~~
+~~11.   make form wider for contact form~~
+~~12.   Check carousel image sizes~~
 
 
 
