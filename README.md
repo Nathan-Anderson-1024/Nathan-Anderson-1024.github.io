@@ -23,7 +23,7 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 5. Fix font issue with heading on mobile (uses font awesome font on phone but not in firefox)
 6. fix bottom buttons scaling
 7. ~~Home button covered by nav~~ (removed it)
-8. delete text from message bar after submitting
+8. ~~delete text from message bar after submitting~~
 9. time stamp not updating
 10. fix about button
 11. ~~make form wider for contact form~~
