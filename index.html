@@ -20,8 +20,8 @@
   <body>
     <nav class="d-flex position-fixed top-0 left-0 vh-100 m-0 flex-column text-white shadow-lg side-nav">
       <div class="position-relative d-flex align-items-center justify-content-center icons mx-2 rounded-circle mt-2">
-        <a href="#" class="text-reset"><i class="fa-solid fa-house fa-2xl"></i></a>
-        <span class="position-absolute w-auto p-2 m-3 rounded shadow-p text-dark bg-dark fw-bold fs-5 fw-bold text-white start-100 tooltip-nav">Home</span>
+        <a href="https://nathan-anderson-1024.github.io/Nathan-Anderson-1024/" class="text-reset"><i class="fa-solid fa-house fa-2xl"></i></a>
+        <!-- <span class="position-absolute w-auto p-2 m-3 rounded shadow-p text-dark bg-dark fw-bold fs-5 fw-bold text-white start-100 tooltip-nav">Home</span> -->
       </div>
       <hr class="nav-break">
       <div class="position-relative d-flex align-items-center justify-content-center icons mx-auto rounded-circle mb-2">
@@ -81,19 +81,19 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white" data-bs-toggle="offcanvas" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#about-me">About</a>
+              <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#about-me">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#my-projects">Projects</a>
+              <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#my-projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#my-skills">Skills</a>
+              <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#my-skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#contact-me">Contact</a>
+              <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#contact-me">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="https://github.com/Nathan-Anderson-1024" target="_blank">Github</a>
@@ -124,7 +124,7 @@
         <div class="col-7 col-sm-6"> 
           <div class="flex-container d-flex align-items-center">
             <div>
-              <h5 class="p-md-2 py-2" id="about-me"><i class="fa-solid fa-hashtag ms-3 me-md-1 me-sm-0"></i>nathan's-portfolio</h5>
+              <h5 class="p-md-2 py-2"><i class="fa-solid fa-hashtag ms-3 me-md-1 me-sm-0"></i>nathan's-portfolio</h5>
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
           </div>
         </div>
       </div>
-      <div class="row g-0 hover-rows">
+      <div class="row g-0 hover-rows" id="about-me">
         <div class="col-12 d-flex justify-content-center hello-section align-items-center">
           <div class="text-center">
             <h1 class="mb-2 fw-bold display-4">Hello, I'm Nathan</h1>
@@ -185,7 +185,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-1 hover-rows">
           <div class="col-12 col-xxl-6 first-col d-flex justify-content-center p-0">
-            <img src="./img/fotomatic_preview2.JPG" alt="a preview of my fotomatic website" class="preview-image me-lg-3 me-0">
+            <a href="https://nathan-anderson-1024.github.io/fotomatic/" target="_blank">
+              <img src="./img/fotomatic_preview2.JPG" alt="a preview of my fotomatic website" class="preview-image me-lg-3 me-0 img-thumbnail">
+            </a>
           </div>
           <div class="col-12 col-xxl-4 second-col d-flex align-items-center justify-content-center flex-column description-section text-center">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -197,7 +199,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-2 hover-rows">
         <div class="col-12 col-xxl-6 d-flex justify-content-center p-0">
-          <img src="./img/fresno_gaming_preview.JPG" alt="a preview of my fresno gaming club website" class="preview-image me-lg-3 me-0">
+          <a href="https://nathan-anderson-1024.github.io/Challenge-Project-Responsive-Club-Website/" target="_blank">
+            <img src="./img/fresno_gaming_preview.JPG" alt="a preview of my fresno gaming club website" class="preview-image me-lg-3 me-0 img-thumbnail">
+          </a>
         </div>
         <div class="col-12 col-xxl-4 d-flex align-items-center justify-content-center flex-column description-section text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -212,7 +216,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-3 hover-rows">
         <div class="col-12 col-xxl-6 d-flex justify-content-center p-0">
-          <img src="./img/IT_solutions_preview.JPG" alt="a preview of my IT solutions homepage" class="preview-image me-lg-3 me-0">
+          <a href="https://nathan-anderson-1024.github.io/Challenge-Project-Company-Homepage-with-Flexbox/" target="_blank">
+            <img src="./img/IT_solutions_preview.JPG" alt="a preview of my IT solutions homepage" class="preview-image me-lg-3 me-0 img-thumbnail">
+          </a>
         </div>
         <div class="col-12 col-xxl-4 d-flex align-items-center justify-content-center flex-column description-section text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -224,7 +230,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-4 hover-rows">
         <div class="col-12 col-xxl-6 d-flex justify-content-center p-0">
-          <img src="./img/moqups_remake.JPG" alt="a preview of my moqups remake" class="preview-image me-lg-3 me-0">
+          <a href="https://nathan-anderson-1024.github.io/event-landing-page/" target="_blank">
+            <img src="./img/moqups_remake.JPG" alt="a preview of my moqups remake" class="preview-image me-lg-3 me-0 img-thumbnail">
+          </a>
         </div>
         <div class="col-12 col-xxl-4 d-flex align-items-center justify-content-center flex-column description-section text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -236,7 +244,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-5 hover-rows">
         <div class="col-12 col-xxl-6 d-flex justify-content-center p-0">
-          <img src="./img/parallax_preview.JPG" alt="a preview of my parallax website" class="preview-image me-md-3">
+          <a href="https://nathan-anderson-1024.github.io/parallax-practice/">
+            <img src="./img/parallax_preview.JPG" alt="a preview of my parallax website" class="preview-image me-md-3 img-thumbnail">
+          </a>
         </div>
         <div class="col-12 col-xxl-4 d-flex align-items-center justify-content-center flex-column description-section text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -294,7 +304,9 @@
       </div>
       <div class="row g-0 mb-5 project-row-7 hover-rows">
         <div class="col-12 col-xxl-6 d-flex justify-content-center p-0">
-          <img src="./img/w4b_final_preview.JPG" alt="a preview of my final website for websites for beginners" class="preview-image me-lg-3 me-0">
+          <a href="https://nathan-anderson-1024.github.io/final-project/" target="_blank">
+            <img src="./img/w4b_final_preview.JPG" alt="a preview of my final website for websites for beginners" class="preview-image me-lg-3 me-0 img-thumbnail">
+          </a>
         </div>
         <div class="col-12 col-xxl-4 d-flex align-items-center justify-content-center flex-column description-section text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, labore repellat assumenda ducimus eos eligendi eveniet, corporis quas omnis quo vero nam. Neque, magni dicta! Quidem illum hic repellendus modi. Aut, quasi eligendi accusantium delectus possimus facilis exercitationem. Vel, dolor error dolore non, voluptates itaque, nihil officia ipsum molestias sed ducimus veniam rerum omnis reiciendis ex possimus quidem quis repellendus quisquam rem consequuntur eaque numquam! Esse, exercitationem laborum. Repudiandae architecto enim iste vitae libero similique at sint itaque ex, voluptate natus quaerat excepturi, deserunt consectetur, debitis iure amet culpa totam quis ea laborum. Consectetur laborum atque quas dignissimos. Sequi, iste.</p>
@@ -312,84 +324,88 @@
       </div>
       <div class="row g-0 hover-rows">
         <div class="col-12 d-flex justify-content-center align-items-center iconify-container flex-wrap">
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="logos:html-5"></span>
             <p class="mt-2 iconify-text-normal">HTML</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="logos:css-3"></span>
             <p class="mt-2 iconify-text-normal">CSS</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="fa-brands:git-square" style="color: #f05033;"></span>
             <p class="mt-2 iconify-text-normal">Git</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="akar-icons:github-fill" style="color: #0d6efd;"></span>
             <p class="mt-2 iconify-text-normal">GitHub</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="logos:bootstrap" style="color: #0d6efd;"></span>
             <p class="mt-2 iconify-text-normal">Bootstrap</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify mx-4 iconify-normal" data-icon="logos:python" style="color: #0d6efd;"></span>
             <p class="mt-2 iconify-text-normal">Python</p>
           </div>
-          <div class="text-center">
+          <div class="text-center iconify-icon-container">
             <span class="iconify iconify-normal" data-icon="logos:postgresql" style="color: #0d6efd;"></span>
             <p class="mt-2 iconify-text-normal">PostgreSQL</p>
           </div>
         </div>
       </div>
       <!-- Contact section -->
-      <div class="row g-0" id="contact-me">
-        <div class="col-12 d-flex justify-content-center">
-          <h3 class="fw-bold">Contact Me</h3>
+      <div class="container-fluid g-0 contact-container">
+        <div class="row g-0" id="contact-me">
+          <div class="col-12 d-flex justify-content-center">
+            <h3 class="fw-bold">Contact Me</h3>
+          </div>
         </div>
-      </div>
-      <div class="row g-0 hover-rows pb-5 contact-text">
-        <div class="col-12 d-flex justify-content-center align-items-center">
-          <form action="" class="col-6">
-            <div class="mb-3">
-              <label for="#name" class="form-label text-light">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <label for="#email-address" class="form-label">Your Email Address</label>
-              <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Your Email Address">
-              <div id="emailHelp" class="form-text">I will never share your email with anyone.</div>
-            </div>
-            <div class="mb-3">
-              <label for="#subject-line" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject-line" placeholder="What is the subject of your inquiry?">
-            </div>
-            <div class="mb-3">
-              <label for="#message" class="form-label">Message</label>
-              <textarea type="text" class="form-control" id="message" placeholder="Please leave a message after the beep.." rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary submit-form">Submit</button>
-          </form>
+        <div class="row g-0 hover-rows pb-5 contact-text">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <form action="" class="col-xxl-6 col-11">
+              <div class="mb-3">
+                <label for="#name" class="form-label text-light">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="#email-address" class="form-label">Your Email Address</label>
+                <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Your Email Address">
+                <div id="emailHelp" class="form-text">I will never share your email with anyone.</div>
+              </div>
+              <div class="mb-3">
+                <label for="#subject-line" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject-line" placeholder="What is the subject of your inquiry?">
+              </div>
+              <div class="mb-3">
+                <label for="#message" class="form-label">Message</label>
+                <textarea type="text" class="form-control" id="message" placeholder="Please leave a message after the beep.." rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary submit-form">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
       <ul class="text-white mt-5 mb-5 pb-5 list-unstyled ms-5" id="chat"></ul>
-      <div class="row g-0 py-3 py-xl-5 footer-container d-flex justify-content-center">
-        <div class="footer-div">
-          <form class="inline" id="chat-form">
-            <div class="input-icons position-relative">
-              <div class="icon-footer d-flex justify-content-start align-items-center">
-                <a href="#" class="me-2 ms-2 text-reset position-absolute icon-plus"><i class="fa-solid fa-circle-plus fa-1xl"></i></a>
-                <input type="text" class="form-control input-field px-5 border-0 py-xxl-3 py-xl-2 text-white" id="message-bar" name="chat-msg" placeholder="Message #nathan's-portfolio">
-                <input type="submit" style="display:none">
+      <div class="container-fluid g-0">
+        <div class="row g-0 py-3 py-xl-5 footer-container d-flex justify-content-center">
+          <div class="footer-div">
+            <form class="inline" id="chat-form">
+              <div class="input-icons position-relative">
+                <div class="icon-footer d-flex justify-content-start align-items-center">
+                  <a href="#" class="me-2 ms-2 text-reset position-absolute icon-plus"><i class="fa-solid fa-circle-plus fa-1xl"></i></a>
+                  <input type="text" class="form-control input-field px-5 border-0 py-xxl-3 py-xl-2 text-white" id="message-bar" name="chat-msg" placeholder="Message #nathan's-portfolio">
+                  <input type="submit" style="display:none">
+                </div>
+                <div class="d-flex justify-content-end icon-footer-container position-absolute">
+                  <a href="#" class="text-reset footer-icons me-3"><i class="fa-solid fa-gift fa-1xl gift-icon"></i></a>
+                  <a href="#" class="text-reset footer-icons me-3 film-icon"><i class="fa-solid fa-photo-film film-icon"></i></a>
+                  <a href="#" class="text-reset footer-icons me-3 doc-icon"><i class="fa-solid fa-file-circle-plus doc-icon"></i></a>
+                  <a href="#" class="text-reset footer-icons me-3"><i class="fa-solid fa-face-smile smile-icon"></i></a>
+                </div>
               </div>
-              <div class="d-flex justify-content-end icon-footer-container position-absolute">
-                <a href="#" class="text-reset footer-icons me-3"><i class="fa-solid fa-gift fa-1xl gift-icon"></i></a>
-                <a href="#" class="text-reset footer-icons me-3 film-icon"><i class="fa-solid fa-photo-film film-icon"></i></a>
-                <a href="#" class="text-reset footer-icons me-3 doc-icon"><i class="fa-solid fa-file-circle-plus doc-icon"></i></a>
-                <a href="#" class="text-reset footer-icons me-3"><i class="fa-solid fa-face-smile smile-icon"></i></a>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </main>
