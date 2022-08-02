@@ -82,6 +82,9 @@ body {
 .hello-section {
     height: 50vh;
 }
+.full-stack {
+    color: #0D6EFD;
+}
 /* My projects section */
 .preview-image {
     max-width: 33vw;
