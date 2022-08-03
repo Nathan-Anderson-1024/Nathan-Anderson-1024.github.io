@@ -43,6 +43,9 @@ body {
     background-color: #36393F;
     z-index: 1;
 }
+.navbar-toggler {
+    background-color: #36393F;
+}
 /* Main section */
 .main-section {
     background-color: #36393F;
