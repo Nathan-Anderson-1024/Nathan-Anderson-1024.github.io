@@ -343,6 +343,9 @@ body {
     .side-nav {
         display: none !important;
     }
+    .top-nav {
+        width: 100vw;
+    }
     /* Make main section fit the screen */
     .main-section {
         width: 100vw;
@@ -394,6 +397,9 @@ body {
         display: none;
     }
     /* Contact Section */
+    .contact-container {
+        margin-top: 5rem;
+    }
     .contact-icon {
         color: #0A58CA;
     }
