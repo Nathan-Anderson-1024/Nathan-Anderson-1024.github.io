@@ -148,6 +148,9 @@ body {
 .icon-footer a {
     font-size: 1rem;
 }
+.mobile-name {
+    font-family: 'Source Code Pro', Arial;
+}
 /* Media query for screens smaller than 370px */
 @media only screen and (min-width: 100px) and (max-width: 369px) {
     /* Adjust Body spacing */
