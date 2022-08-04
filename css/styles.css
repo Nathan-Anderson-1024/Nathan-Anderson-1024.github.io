@@ -32,14 +32,14 @@ body {
     display: block;
 }
 .top-nav {
-    width: 97vw;
+    width: 95vw;
     background-color: #36393F;
     z-index: 1;
 }
 /* Mobile hamburger nav */
 .mobile-navbar {
-    width: 100vw;
-    margin-left: 4rem;
+    /* width: 100vw; */
+    /* margin-left: 4rem; */
     background-color: #36393F;
     z-index: 1;
 }
@@ -49,7 +49,7 @@ body {
 /* Main section */
 .main-section {
     background-color: #36393F;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 .flex-container {
     display: flex;
@@ -151,10 +151,11 @@ body {
 /* Media query for screens smaller than 370px */
 @media only screen and (min-width: 100px) and (max-width: 369px) {
     /* Adjust Body spacing */
-    body {
+    /* body {
         width: 100vw !important;
         margin-left: -4rem;
-    }
+        overflow-x: hidden;
+    } */
     /* Moves hello section down */
     .hello-section {
         margin-top: 25rem;
@@ -175,9 +176,9 @@ body {
         display: none !important;
     }
     /* Make main section fit the screen */
-    .main-section {
+    /* .main-section {
         width: 100vw;
-    }
+    } */
     .flex-child {
         margin-right: 0;
     }
@@ -221,14 +222,15 @@ body {
     .film-icon, .doc-icon, .smile-icon, .gift-icon {
         display: none;
     }
+    
 }
 /* Media query for small screens */
 @media only screen and (min-width: 370px) and (max-width: 768px) {
     /* Adjust Body spacing */
-    body {
+    /* body {
         width: 100vw !important;
         margin-left: -4rem;
-    }
+    } */
     /* Moves hello section down */
     .hello-section {
         margin-top: 12rem;
@@ -248,9 +250,10 @@ body {
         display: none !important;
     }
     /* Make main section fit the screen */
-    .main-section {
-        width: 100vw;
-    }
+    /* .main-section {
+        width: 98vw;
+        overflow-x: hidden;
+    } */
     .flex-child {
         margin-right: 0;
     }
@@ -302,7 +305,10 @@ body {
 
 /* Media query for 1080p */
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
-    
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .hello-section {
         margin-top: 6rem;
     }
@@ -319,7 +325,9 @@ body {
         display: none;
     }
     .top-nav {
-        width: 95vw;
+        /* width: 90vw; */
+        width: 94vw;
+        /* margin-left: 4rem; */
         background-color: #36393F;
         z-index: 1;
     }
@@ -330,7 +338,7 @@ body {
     /* (max-width: 1079px) */
     body {
         width: 100vw !important;
-        margin-left: -4rem;
+        /* margin-left: -4rem; */
     }
     .hello-section {
         margin-top: 12rem;
@@ -356,15 +364,21 @@ body {
         display: none !important;
     }
     .top-nav {
-        width: 100vw;
+        /* width: 100vw; */
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
     }
     /* Make main section fit the screen */
-    .main-section {
+    /* .main-section {
         width: 100vw;
-    }
+        margin-left: 4rem;
+    } */
 }
 /* Media query for 1440p */
-@media only screen and (min-width: 1081px) and (max-width: 3800px) {
+@media only screen and (min-width: 1081px) and (max-width: 2560px) {
+    /* (max-width: 3800px) */
     html {
         font-size: 16px;
     }
@@ -391,6 +405,7 @@ body {
     .icons:hover .tooltip-nav {
         display: block;
     }
+
     /* Tooltip for the right side */
     .right-tooltip-nav {
         display: none;
@@ -399,6 +414,9 @@ body {
     .hello-section {
         height: 50vh;
         margin-top: 12rem;
+    }
+    .main-section {
+        margin-left: 4rem;
     }
     /* My projects section */
     .preview-image {
@@ -504,7 +522,7 @@ body {
         font-size: 4rem;
         margin-left: 15rem !important;
     }
-} 
+}
 body {
     background-color: white;
 }
