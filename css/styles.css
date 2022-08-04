@@ -468,7 +468,7 @@ body {
     }
     .top-nav {
         width: 95vw;
-        margin-left: 6rem;
+        margin-left: 10rem;
         padding-top: 2rem;
         font-size: 2rem;
     }
@@ -516,6 +516,21 @@ body {
     .footer-icons {
         font-size: 3rem;
     }
+    .icon-footer a {
+        font-size: 2.5rem;
+    }
+    .film-icon {
+        right: 8rem;
+    }
+    .doc-icon {
+        right: 4rem;
+    }
+    .smile-icon {
+        right: 0;
+    }
+    .gift-icon {
+        right: 12rem;
+    }
     /* PLus icon */
     .icon-plus {
         font-size: 2.25rem;
@@ -529,8 +544,12 @@ body {
         font-size: 4rem;
         margin-left: 15rem !important;
     }
-}
-body {
-    background-color: white;
+    .message-bar-container-fluid {
+        margin-left: 10rem;
+        width: 100vw !important;
+    }
+    .row-div {
+        width: 97vw;
+    }
 }
 
