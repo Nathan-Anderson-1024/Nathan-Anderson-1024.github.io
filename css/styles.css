@@ -325,7 +325,7 @@ body {
     }
 }
 /* Media query for small phones in landscape */
-@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 2559px) { 
+@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 1079px) { 
     /* Adjust Body spacing */
     /* (max-width: 1079px) */
     body {
