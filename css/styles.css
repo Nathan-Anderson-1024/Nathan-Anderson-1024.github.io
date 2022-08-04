@@ -158,8 +158,11 @@ body {
     }
     /* Moves hello section down */
     .hello-section {
-        margin-top: 12rem;
+        margin-top: 25rem;
         margin-bottom: 6rem;
+    }
+    #my-projects {
+        margin-top: 15rem !important;
     }
     /* Remove unessary icons from top nav */
     .remove-icon {
@@ -229,7 +232,10 @@ body {
     }
     /* Moves hello section down */
     .hello-section {
-        margin-top: 10rem;
+        margin-top: 12rem;
+    }
+    #my-projects {
+        margin-top: 6rem !important;
     }
     /* Remove unessary icons from top nav */
     .remove-icon {
@@ -320,8 +326,9 @@ body {
     }
 }
 /* Media query for small phones in landscape */
-@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 1079px) {
+@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 2560px) { 
     /* Adjust Body spacing */
+    /* (max-width: 1079px) */
     body {
         width: 100vw !important;
         margin-left: -4rem;
@@ -332,8 +339,11 @@ body {
     .contact-text {
         margin-top: 2rem;
     }
+    #my-projects {
+        margin-top: 10rem !important;
+    }
     #contact-me h3 {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     .offcanvas-header, .offcanvas-body {
         background-color: #36393F;
