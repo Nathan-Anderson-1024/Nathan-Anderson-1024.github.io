@@ -50,7 +50,6 @@ body {
 .main-section {
     background-color: #36393F;
     margin-left: 4rem;
-
 }
 .flex-container {
     display: flex;
@@ -326,7 +325,7 @@ body {
     }
 }
 /* Media query for small phones in landscape */
-@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 2560px) { 
+@media only screen and (orientation: landscape) and (min-width: 300px) and (max-width: 2559px) { 
     /* Adjust Body spacing */
     /* (max-width: 1079px) */
     body {
@@ -506,4 +505,7 @@ body {
         margin-left: 15rem !important;
     }
 } 
+body {
+    background-color: white;
+}
 
