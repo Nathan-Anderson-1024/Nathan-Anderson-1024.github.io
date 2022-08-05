@@ -32,7 +32,8 @@ body {
     display: block;
 }
 .top-nav {
-    width: 97vw;
+    /* width: 97vw; */
+    width: 96vw;
     background-color: #36393F;
     z-index: 1;
 }
