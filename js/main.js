@@ -31,9 +31,13 @@ form.onsubmit = (event) => {
     if (Data[lastIndex] === '!8ball') {
         eightBallInfo();
     }
-    else if (input.value.includes('!8ball') && input.value.length > 10) {
+    else if (input.value.includes('!8ball') && input.value.length > 15 && input.value.includes("?")) {
         eightBallResult();
         getUserQuestion();
+    }
+    else if (!input.value.includes("?")) {
+        eightBallResult();
+        addMessage('Please include a ? at the end of your question.')
     }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
     input.value = ''; //clears input field
@@ -80,33 +84,10 @@ const getUserQuestion = () => {
     const randomNum = Math.floor(Math.random() * answerArray.length); //picks random number
     //returnAnswer pushed 8ball response to array and returns an alert to the user of the answer
     answerMemory.push(answerArray[randomNum]);
-    // const returnAnswer = () => {
-    //     answerMemory.push(answerArray[randomNum]);
-    //     return alert(answerArray[randomNum]);
-    // };
-    if (input === '' || input.length <= 7) {
-        return alert('Please ask a question.')
-    }
-    else {
-        return addMessage(answerArray[randomNum]);
-    }
-    // else {
-    //     return returnAnswer();
-    // }
-    //if question hasnt been asked then return an answer and push the question into memory.
-    // if (inputMemory.includes(input) === false) {
-    //     inputMemory.push(input);
-    //     returnAnswer()
-    // }
-    // if question has been asked then return the question and the answer that was given at the time.
-    // else {
-    //     const userInputIndex = inputMemory.findIndex(element => element === input)
-    //     const answerMemoryIndex = answerMemory[userInputIndex];
-    //     return alert(`You already asked me '${input}', my answer is still ${answerMemoryIndex} `)
-    // }
+    return addMessage(answerArray[randomNum]);
 };
 
-
+// sends 8ball info when user types !8ball
 const eightBallInfo = () => {
     const current = new Date();
     const localTime = current.toLocaleTimeString(); // Get local time
@@ -118,6 +99,7 @@ const eightBallInfo = () => {
     addMessage('<a href="https://www.google.com" target="_blank">Fortune Teller</a>')
     window.scrollTo(0, document.body.scrollHeight);
 }
+// sends bot time and name to chat
 const eightBallResult = () => {
     const current = new Date();
     const localTime = current.toLocaleTimeString(); // Get local time
