@@ -17,15 +17,28 @@ function addMessage(userMessage) {
     localStorage.setItem('chat', JSON.stringify(Data)); //saves entry in local storage
 }
 
+// get date function
+function getDate() {
+    const current = new Date();
+    const localTime = current.toLocaleTimeString();
+    return localTime
+}
+getDate();
 
 form.onsubmit = (event) => {
-    const current = new Date();
-    const localTime = current.toLocaleTimeString(); // Get local time
-    const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
-    const you = "<span class='fw-bold fs-4 me-2'>You</span> "; // Add some bootstrap classes to style 'You'
-    const combined = you + localSmallFont; // Combine you and time to look like discord text
+    const localTime = getDate(); // Get local time
+    const spanTime = document.createElement('span');
+    const spanYou = document.createElement('span');
+    spanYou.classList.add('fw-bold')
+    spanYou.classList.add('fs-4')
+    spanYou.classList.add('me-2')
+    spanYou.innerHTML = 'You'
+    spanTime.classList.add('fs-6')
+    spanTime.innerHTML = localTime;
+    console.log(spanYou.innerHTML)
+    chatHistory.appendChild(spanYou)
+    chatHistory.appendChild(spanTime)
     event.preventDefault(); //cant just submit nothing
-    addMessage(combined); //adds You + time li to dom after hitting enter
     addMessage(input.value); //adds your message to dom after hitting enter
     const lastIndex = Data.length -1;
     if (Data[lastIndex] === '!8ball') {
@@ -35,7 +48,7 @@ form.onsubmit = (event) => {
         eightBallResult();
         getUserQuestion();
     }
-    else if (!input.value.includes("?")) {
+    else if (input.value.includes('!8ball') &&!input.value.includes("?")) {
         eightBallResult();
         addMessage('Please include a ? at the end of your question.')
     }
@@ -46,8 +59,7 @@ form.onsubmit = (event) => {
 // display help message from bot
 // when user clicks on chat bar send help message
 const sendHelp = () => {
-    const current = new Date();
-    const localTime = current.toLocaleTimeString(); // Get local time
+    const localTime = getDate();
     const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
     const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
     const combined = you + localSmallFont;
@@ -89,8 +101,7 @@ const getUserQuestion = () => {
 
 // sends 8ball info when user types !8ball
 const eightBallInfo = () => {
-    const current = new Date();
-    const localTime = current.toLocaleTimeString(); // Get local time
+    const localTime = getDate();
     const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
     const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
     const combined = you + localSmallFont;
@@ -101,8 +112,7 @@ const eightBallInfo = () => {
 }
 // sends bot time and name to chat
 const eightBallResult = () => {
-    const current = new Date();
-    const localTime = current.toLocaleTimeString(); // Get local time
+    const localTime = getDate();
     const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
     const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
     const combined = you + localSmallFont;
