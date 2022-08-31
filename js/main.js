@@ -102,7 +102,8 @@ const getUserQuestion = () => {
     const randomNum = Math.floor(Math.random() * answerArray.length); //picks random number
     //returnAnswer pushed 8ball response to array and returns an alert to the user of the answer
     answerMemory.push(answerArray[randomNum]);
-    return addMessage(answerArray[randomNum]);
+    const originalQuestion = input.value.split("!8ball ").pop();
+    return addMessage(`You asked me "${originalQuestion}", and my answer is ${answerArray[randomNum]}`);
 };
 
 // sends 8ball info when user types !8ball
