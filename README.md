@@ -26,3 +26,4 @@ All questions should be directed to nathan.anderson.1024@gmail.com
 3. review requirements for triggering of 8ball function
 4. work on implementing 8ball memory to remember user questions.
 5. implement external 8ball site and link to it.
+6. remove ability to insert css directly in the dom
