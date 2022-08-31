@@ -60,10 +60,16 @@ form.onsubmit = (event) => {
 // when user clicks on chat bar send help message
 const sendHelp = () => {
     const localTime = getDate();
-    const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
-    const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
-    const combined = you + localSmallFont;
-    addMessage(combined);
+    const spanTime = document.createElement('span');
+    const spanDiscordBot = document.createElement('span');
+    spanDiscordBot.classList.add('fw-bold')
+    spanDiscordBot.classList.add('fs-4')
+    spanDiscordBot.classList.add('me-2')
+    spanDiscordBot.innerHTML = 'Discord Bot'
+    spanTime.classList.add('fs-6')
+    spanTime.innerHTML = localTime;
+    chatHistory.appendChild(spanDiscordBot)
+    chatHistory.appendChild(spanTime)
     addMessage('Use !8ball to summon the fortune teller.');
     window.scrollTo(0, document.body.scrollHeight);
     form.removeEventListener('click', sendHelp);
