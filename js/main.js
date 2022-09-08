@@ -44,13 +44,17 @@ form.onsubmit = (event) => {
     if (Data[lastIndex] === '!8ball') {
         eightBallInfo();
     }
-    else if (input.value.includes('!8ball') && input.value.length > 15 && input.value.includes("?")) {
+    else if (input.value.includes('!8ball') && input.value.length > 15 && input.value.includes("?") && input.value.includes('will') || input.value.includes('Will')) {
         eightBallResult();
         getUserQuestion();
     }
     else if (input.value.includes('!8ball') &&!input.value.includes("?")) {
         eightBallResult();
         addMessage('Please include a ? at the end of your question.')
+    }
+    else if (!input.value.includes('will') || !input.value.includes('Will')) {
+        eightBallResult();
+        addMessage("I can't answer those types of questions.")
     }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
     input.value = ''; //clears input field
