@@ -10,8 +10,7 @@ const Data = []
 function addMessage(userMessage) {
     Data.push(userMessage); //Adds users text to the array
     const li = document.createElement('li'); //creates a new list item 
-    li.classList.add('hover-rows'); //adds hover-rows class to li
-    li.classList.add('chat-item'); //adds chat-item class to li
+    li.classList.add('hover-rows','chat-item'); //adds hover-rows class to li
     li.innerHTML = userMessage; //sets li in the html
     chatHistory.appendChild(li); //appends li to the ul
     localStorage.setItem('chat', JSON.stringify(Data)); //saves entry in local storage
@@ -29,9 +28,7 @@ form.onsubmit = (event) => {
     const localTime = getDate(); // Get local time
     const spanTime = document.createElement('span');
     const spanYou = document.createElement('span');
-    spanYou.classList.add('fw-bold')
-    spanYou.classList.add('fs-4')
-    spanYou.classList.add('me-2')
+    spanYou.classList.add('fw-bold','fs-4','me-2')
     spanYou.innerHTML = 'You'
     spanTime.classList.add('fs-6')
     spanTime.innerHTML = localTime;
@@ -44,7 +41,7 @@ form.onsubmit = (event) => {
     if (Data[lastIndex] === '!8ball') {
         eightBallInfo();
     }
-    else if (input.value.includes('!8ball') && input.value.length > 15 && input.value.includes("?") && input.value.includes('will') || input.value.includes('Will')) {
+    else if (input.value.toLowerCase().includes('!8ball') && input.value.length > 15 && input.value.includes("?") && input.value.toLowerCase().includes('will')) {
         eightBallResult();
         getUserQuestion();
     }
@@ -52,9 +49,9 @@ form.onsubmit = (event) => {
         eightBallResult();
         addMessage('Please include a ? at the end of your question.')
     }
-    else if (!input.value.includes('will') || !input.value.includes('Will')) {
+    else if (!input.value.toLowerCase().includes('will')) {
         eightBallResult();
-        addMessage("I can't answer those types of questions.")
+        addMessage("Please include 'will' in your question.")
     }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
     input.value = ''; //clears input field
@@ -66,9 +63,7 @@ const sendHelp = () => {
     const localTime = getDate();
     const spanTime = document.createElement('span');
     const spanDiscordBot = document.createElement('span');
-    spanDiscordBot.classList.add('fw-bold')
-    spanDiscordBot.classList.add('fs-4')
-    spanDiscordBot.classList.add('me-2')
+    spanDiscordBot.classList.add('fw-bold', 'fs-4', 'me-2')
     spanDiscordBot.innerHTML = 'Discord Bot'
     spanTime.classList.add('fs-6')
     spanTime.innerHTML = localTime;
@@ -118,7 +113,7 @@ const eightBallInfo = () => {
     const combined = you + localSmallFont;
     addMessage(combined);
     addMessage('Welcome to the fortune teller! Use <strong>!8ball "Your question here"</strong> in the chat or click on the link below to open the fortune teller in a new window.');
-    addMessage('<a href="https://www.google.com" target="_blank">Fortune Teller</a>')
+    addMessage('<a href="https://nathan-anderson-1024.github.io/magic8ball/" target="_blank">Fortune Teller</a>')
     window.scrollTo(0, document.body.scrollHeight);
 }
 // sends bot time and name to chat
