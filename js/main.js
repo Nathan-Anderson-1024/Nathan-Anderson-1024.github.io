@@ -1,5 +1,5 @@
 import { getDate } from "./date.js";
-import { addUserHeader, form } from "./addUserHeader.js";
+import { addUserHeader, form, chatHistory } from "./addUserHeader.js";
 import { sendHelp } from "./addBotHeader.js";
 import { addMessage, Data } from "./addMessage.js";
 
@@ -58,9 +58,16 @@ const getUserQuestion = () => {
 
 // sends 8ball info when user types !8ball
 const eightBallInfo = () => {
-    const combined = sendHelp();
+    //const combined = sendHelp();
     addMessage('Welcome to the fortune teller! Use !8ball "Your question here" in the chat or click on the link below to open the fortune teller in a new window.');
-    addMessage('<a href="https://nathan-anderson-1024.github.io/magic8ball/" target="_blank">Fortune Teller</a>')
+    const li = document.createElement('li');
+    li.classList.add('hover-rows','chat-item', 'pt-4');
+    const aElement = document.createElement('a');
+    aElement.href = 'https://nathan-anderson-1024.github.io/magic8ball/';
+    aElement.setAttribute('target', '_blank');
+    aElement.innerHTML = 'Fortune Teller';
+    li.appendChild(aElement)
+    chatHistory.appendChild(li) 
     window.scrollTo(0, document.body.scrollHeight);
 }
 // sends bot time and name to chat
