@@ -5,7 +5,7 @@ export const Data = []
 //adds user message to the dom, checks for html insertion and sanitizes it
 export function addMessage(userMessage) {
     const htmlInjectTest = (new RegExp(/</g)).test(userMessage)
-    if (htmlInjectTest === true) {
+    if (htmlInjectTest) {
         const sanitizedMessage = userMessage.replace(/</g,"&lt;");
         Data.push(sanitizedMessage); //Adds users text to the array
         const li = document.createElement('li'); //creates a new list item 
