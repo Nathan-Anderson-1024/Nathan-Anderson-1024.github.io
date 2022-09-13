@@ -11,7 +11,6 @@ export function addUserHeader() {
     spanTime.classList.add('fs-6')
     const localTime = getDate();
     spanTime.innerHTML = localTime;
-    //console.log(spanYou.innerHTML)
     chatHistory.appendChild(spanYou)
     chatHistory.appendChild(spanTime)
 }

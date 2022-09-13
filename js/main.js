@@ -1,6 +1,6 @@
-import { getDate } from "./date.js";
+//import { getDate } from "./date.js";
 import { addUserHeader, form, chatHistory } from "./addUserHeader.js";
-import { sendHelp } from "./addBotHeader.js";
+import { sendHelp, displayBotHeader } from "./addBotHeader.js";
 import { addMessage, Data } from "./addMessage.js";
 
 
@@ -20,7 +20,7 @@ form.onsubmit = (event) => {
         eightBallInfo();
     }
     else if (lowerCaseInput.includes('!8ball') && input.value.length > 15 && lowerCaseInput.includes('will')) {
-        eightBallResult();
+        displayBotHeader();
         getUserQuestion();
     }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
@@ -58,7 +58,7 @@ const getUserQuestion = () => {
 
 // sends 8ball info when user types !8ball
 const eightBallInfo = () => {
-    //const combined = sendHelp();
+    displayBotHeader();
     addMessage('Welcome to the fortune teller! Use !8ball "Your question here" in the chat or click on the link below to open the fortune teller in a new window.');
     const li = document.createElement('li');
     li.classList.add('hover-rows','chat-item', 'pt-4');
@@ -69,12 +69,4 @@ const eightBallInfo = () => {
     li.appendChild(aElement)
     chatHistory.appendChild(li) 
     window.scrollTo(0, document.body.scrollHeight);
-}
-// sends bot time and name to chat
-const eightBallResult = () => {
-    const localTime = getDate();
-    const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
-    const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
-    const combined = you + localSmallFont;
-    addMessage(combined);
 }
