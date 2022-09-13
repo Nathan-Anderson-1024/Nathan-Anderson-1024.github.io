@@ -1,3 +1,5 @@
+import { getDate } from "./date.js";
+
 // const form = document.querySelector('form');
 const form = document.getElementById('chat-form');
 const input = document.querySelector("[name='chat-msg']");
@@ -17,12 +19,12 @@ function addMessage(userMessage) {
 }
 
 // get date function
-function getDate() {
-    const current = new Date();
-    const localTime = current.toLocaleTimeString();
-    return localTime
-}
-getDate();
+// function getDate() {
+//     const current = new Date();
+//     const localTime = current.toLocaleTimeString();
+//     return localTime
+// }
+//getDate();
 
 form.onsubmit = (event) => {
     const localTime = getDate(); // Get local time
@@ -32,7 +34,7 @@ form.onsubmit = (event) => {
     spanYou.innerHTML = 'You'
     spanTime.classList.add('fs-6')
     spanTime.innerHTML = localTime;
-    console.log(spanYou.innerHTML)
+    //console.log(spanYou.innerHTML)
     chatHistory.appendChild(spanYou)
     chatHistory.appendChild(spanTime)
     event.preventDefault(); //cant just submit nothing
@@ -41,14 +43,14 @@ form.onsubmit = (event) => {
     if (Data[lastIndex] === '!8ball') {
         eightBallInfo();
     }
-    else if (input.value.toLowerCase().includes('!8ball') && input.value.length > 15 && input.value.includes("?") && input.value.toLowerCase().includes('will')) {
+    else if (input.value.toLowerCase().includes('!8ball') && input.value.length > 15 && input.value.toLowerCase().includes('will')) {
         eightBallResult();
         getUserQuestion();
     }
-    else if (input.value.includes('!8ball') &&!input.value.includes("?")) {
-        eightBallResult();
-        addMessage('Please include a ? at the end of your question.')
-    }
+    // else if (input.value.includes('!8ball') &&!input.value.includes("?")) {
+    //     eightBallResult();
+    //     addMessage('Please include a ? at the end of your question.')
+    // }
     else if (!input.value.toLowerCase().includes('will')) {
         eightBallResult();
         addMessage("Please include 'will' in your question.")
