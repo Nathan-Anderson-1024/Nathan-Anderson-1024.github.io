@@ -4,7 +4,7 @@ import { addMessage } from "./addMessage.js";
 
 export const sendHelp = () => {
     displayBotHeader();
-    addMessage('Use !8ball to summon the fortune teller.');
+    addMessage('Use !8ball to summon the Magic 8 Ball.');
     window.scrollTo(0, document.body.scrollHeight);
     form.removeEventListener('click', sendHelp);
     

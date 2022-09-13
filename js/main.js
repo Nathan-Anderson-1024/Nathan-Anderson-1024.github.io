@@ -65,7 +65,8 @@ const eightBallInfo = () => {
     const aElement = document.createElement('a');
     aElement.href = 'https://nathan-anderson-1024.github.io/magic8ball/';
     aElement.setAttribute('target', '_blank');
-    aElement.innerHTML = 'Fortune Teller';
+    aElement.classList.add('fw-bold', 'h5')
+    aElement.innerHTML = 'Magic 8 Ball';
     li.appendChild(aElement)
     chatHistory.appendChild(li) 
     window.scrollTo(0, document.body.scrollHeight);
