@@ -10,7 +10,7 @@ const input = document.querySelector("[name='chat-msg']");
 
 
 form.onsubmit = (event) => {
-    const localTime = getDate(); // Get local time
+    //const localTime = getDate(); // Get local time
     addUserHeader();
     event.preventDefault(); //cant just submit nothing
     addMessage(input.value); //adds your message to dom after hitting enter
@@ -29,7 +29,6 @@ form.onsubmit = (event) => {
 
 form.addEventListener('click', sendHelp);
 
-// implement !8ball command.
 
 //array for remembering the 8ball answers
 const answerMemory = [];
@@ -59,12 +58,8 @@ const getUserQuestion = () => {
 
 // sends 8ball info when user types !8ball
 const eightBallInfo = () => {
-    const localTime = getDate();
-    const localSmallFont = `<span class='fs-6'>${localTime}</span>`; // Add some bootstrap classes to time in a not so elegant fashion
-    const you = "<span class='fw-bold fs-4 me-2'>Discord Bot</span> "; // Add some bootstrap classes to style 'You'
-    const combined = you + localSmallFont;
-    addMessage(combined);
-    addMessage('Welcome to the fortune teller! Use <strong>!8ball "Your question here"</strong> in the chat or click on the link below to open the fortune teller in a new window.');
+    const combined = sendHelp();
+    addMessage('Welcome to the fortune teller! Use !8ball "Your question here" in the chat or click on the link below to open the fortune teller in a new window.');
     addMessage('<a href="https://nathan-anderson-1024.github.io/magic8ball/" target="_blank">Fortune Teller</a>')
     window.scrollTo(0, document.body.scrollHeight);
 }
