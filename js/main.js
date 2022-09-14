@@ -46,7 +46,6 @@ form.onsubmit = (event) => {
     addMessage(input.value); //adds your message to dom after hitting enter
     const lastIndex = Data.length -1;
     const lowerCaseInput = input.value.toLowerCase();
-    console.log(lowerCaseInput.substring(7,10))
     if (Data[lastIndex] === '!8ball') {
         eightBallInfo();
     }
