@@ -40,9 +40,9 @@ const whereAnswers = ['The Bahamas', 'Disneyland', 'Disney World', 'Fresno, CA',
 
 
 form.onsubmit = (event) => {
+    event.preventDefault(); //stop the page from reloading on submit
     //const localTime = getDate(); // Get local time
     displayHeader('You')
-    event.preventDefault(); //cant just submit nothing
     addMessage(input.value); //adds your message to dom after hitting enter
     const lastIndex = Data.length -1;
     const lowerCaseInput = input.value.toLowerCase();
