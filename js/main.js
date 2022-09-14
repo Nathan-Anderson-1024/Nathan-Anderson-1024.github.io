@@ -1,6 +1,4 @@
-//import { getDate } from "./date.js";
-import { addUserHeader, form, chatHistory } from "./addUserHeader.js";
-import { sendHelp, displayBotHeader } from "./addBotHeader.js";
+import { sendHelp, displayHeader, form, chatHistory } from "./addMessageHeader.js";
 import { addMessage, Data } from "./addMessage.js";
 
 
@@ -11,7 +9,7 @@ const input = document.querySelector("[name='chat-msg']");
 
 form.onsubmit = (event) => {
     //const localTime = getDate(); // Get local time
-    addUserHeader();
+    displayHeader('You')
     event.preventDefault(); //cant just submit nothing
     addMessage(input.value); //adds your message to dom after hitting enter
     const lastIndex = Data.length -1;
@@ -20,7 +18,7 @@ form.onsubmit = (event) => {
         eightBallInfo();
     }
     else if (lowerCaseInput.includes('!8ball') && input.value.length > 15 && lowerCaseInput.includes('will')) {
-        displayBotHeader();
+        displayHeader('8 Ball Bot');
         getUserQuestion();
     }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
@@ -58,7 +56,7 @@ const getUserQuestion = () => {
 
 // sends 8ball info when user types !8ball
 const eightBallInfo = () => {
-    displayBotHeader();
+    displayHeader('8 Ball Bot');
     addMessage('Welcome to the fortune teller! Use !8ball "Your question here" in the chat or click on the link below to open the fortune teller in a new window.');
     const li = document.createElement('li');
     li.classList.add('hover-rows','chat-item', 'pt-4');
