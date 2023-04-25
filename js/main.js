@@ -69,6 +69,10 @@ form.onsubmit = (event) => {
         displayHeader('8 Ball Bot');
         getUserQuestion(answerArray);
     }
+    else if (lowerCaseInput.includes('!8ball') && input.value.length > 10) {
+        displayHeader('8 Ball Bot');
+        getUserQuestion(answerArray);
+    }
     window.scrollTo(0, document.body.scrollHeight); //Scrolls to the bottom to view message
     input.value = ''; //clears input field
 }
